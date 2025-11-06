@@ -19,7 +19,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nicha van Emmerik
 
   #### Je startniveau:
-  hier je startniveau (kies uit zwart, rood óf blauw)
+  Blauw/Rood
 
   #### Je focus:
   hier je focus (kies uit responsive óf surface plane)
@@ -37,7 +37,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Je opdracht:
   link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+
   https://morkborg.com/
+  https://stiff.madebybuzzworthy.com/work
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   hier de naam van de pagina  
