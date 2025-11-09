@@ -15,8 +15,10 @@
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--text-clr:#111;
+	--background-clr:#eee;
+	--primary-clr: #fff;
+	--sec-pad: 150px 0;
 }
 
 
@@ -27,5 +29,7 @@
 /* JOUW STYLING */
 /****************/
 
-/* jouw code */
-
+body {
+	background-color: var(--background-clr);
+	color: var(--text-clr);
+}
