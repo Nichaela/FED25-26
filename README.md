@@ -41,11 +41,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Steam home 
-  <img src="readme-images/steam_home .png" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/nintendo_home.png" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Steam Game detail
-  <img src="readme-images/steam_game.png" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/nintendo_detailpage.png" width="375px" alt="omschrijving van de pagina">
  
 </details>
 

@@ -2,7 +2,15 @@
 /* CSS REMEDY */
 /**************/
 *, *::after, *::before {
-  box-sizing:border-box;  
+	box-sizing:border-box;  
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	list-style: none;
+	text-decoration: none;
 }
 
 
@@ -18,6 +26,7 @@
 	--text-clr:#111;
 	--background-clr:#eee;
 	--primary-clr: #fff;
+	--secondary-clr: #e60012;
 	--sec-pad: 150px 0;
 }
 
@@ -30,6 +39,20 @@
 /****************/
 
 body {
-	background-color: var(--background-clr);
+	background-color: var(--primary-clr);
 	color: var(--text-clr);
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1em;
+	background-color: var(--secondary-clr);
+	height: 3em;
+}
+
+nav ul {
+	display: flex;
+	gap: 1em;
 }
