@@ -37,7 +37,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Je opdracht:
   link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
-  https://www.nintendo.com/nl-nl/ & https://store.nintendo.nl/nl/pokemon-legends-z-a-nintendo-switch-2-edition-70010000099366 of https://store.steampowered.com/ & https://store.steampowered.com/app/2827200/MIMESIS/
+  https://www.nintendo.com/nl-nl/ & https://store.nintendo.nl/nl/pokemon-legends-z-a-nintendo-switch-2-edition-70010000099366
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Steam home 
