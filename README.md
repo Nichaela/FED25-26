@@ -40,11 +40,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   https://www.nintendo.com/nl-nl/ & https://store.nintendo.nl/nl/pokemon-legends-z-a-nintendo-switch-2-edition-70010000099366
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  Steam home 
+  Nintendo home 
   <img src="readme-images/nintendo_home.png" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  Steam Game detail
+  Pokémon Game Detail
   <img src="readme-images/nintendo_detailpage.png" width="375px" alt="omschrijving van de pagina">
  
 </details>
