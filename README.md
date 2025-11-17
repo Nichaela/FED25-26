@@ -66,20 +66,29 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Breakdownschets (week 1)
 
 <details>
-  <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
+  <summary>
+  Ik heb de screenshot in figma geplakt en de stukken in sections gemarkeerd. Ik twijfelde of de sub tabs onder de H2s een list moet zijn. Na het op zoeken kwam ik er achter dat een list voor verticale lijstjes is. Ik heb het toen verbeterd naar een button omdat het een actie heeft.
+  Ik vroeg me ook af of ik een link in een list mag doen.
+  Ik heb ook geleerd dat je een svg gebruikt i.p.v. een img bij buttons.
+  Voordat ik begon met de breakdown had ik stiekem al wat html geschreven om te kijken wat ik fout zou doen.
+  Ik had veel gebruik gemaakt van sections waar dat niet hoefde. Ik heb sommigen veranderd naar een unordered list of link.
 
-  ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  Ook hoeft een enkele child niet nog eens in een sectie.
+  Bij de volgende werkgroep ga ik vragen of de gemarkeerde h3tjes daadwerkelijk headings zijn of losse tabs.
 
-  ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  Bij het opzetten van de html zelf werd de nav lijst buiten de kader geduwd
+  <img src="readme-images/Screenshot 2025-11-16 191455.png">
+  </summary>
 
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  ### Home pagina: 
+  <img src="readme-images/breakdown_home.jpg" width="375px" alt="breakdown van de hele pagina">
 
+  ### Hamburger menu: 
+  <img src="readme-images/breakdown_hamburger.jpg" width="375px" alt="breakdown van een dynamisch deel">
+
+  ### Nieuws tab: 
+  <img src="readme-images/breakdown_nieuwstab.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 </details>
-
-
 
 
 
