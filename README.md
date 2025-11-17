@@ -66,8 +66,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Breakdownschets (week 1)
 
 <details>
-  <summary>
-  Ik heb de screenshot in figma geplakt en de stukken in sections gemarkeerd. Ik twijfelde of de sub tabs onder de H2s een list moet zijn. Na het op zoeken kwam ik er achter dat een list voor verticale lijstjes is. Ik heb het toen verbeterd naar een button omdat het een actie heeft.
+  <summary> Breakdown uitwerking </summary>
+Ik heb de screenshot in figma geplakt en de stukken in sections gemarkeerd. Ik twijfelde of de sub tabs onder de H2s een list moet zijn. Na het op zoeken kwam ik er achter dat een list voor verticale lijstjes is. Ik heb het toen verbeterd naar een button omdat het een actie heeft.
   Ik vroeg me ook af of ik een link in een list mag doen.
   Ik heb ook geleerd dat je een svg gebruikt i.p.v. een img bij buttons.
   Voordat ik begon met de breakdown had ik stiekem al wat html geschreven om te kijken wat ik fout zou doen.
@@ -78,7 +78,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Bij het opzetten van de html zelf werd de nav lijst buiten de kader geduwd
   <img src="readme-images/Screenshot 2025-11-16 191455.png">
-  </summary>
 
   ### Home pagina: 
   <img src="readme-images/breakdown_home.jpg" width="375px" alt="breakdown van de hele pagina">

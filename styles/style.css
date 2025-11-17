@@ -50,8 +50,25 @@
 /****************/
 
 body {
+	font-family: 'Fira Sans', sans-serif;
 	background-color: var(--primary-clr);
 	color: var(--text-clr);
+}
+
+h1 {
+	font-family: 'Fira Sans', sans-serif;
+	font-size: 1px;
+}
+h2 {
+	font-family: 'Fira Sans', sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+h3 {
+	font-family: 'Fira Sans', sans-serif;
+	font-size: 14px;
+	font-weight: bold;
 }
 
 header {
