@@ -1,0 +1,12 @@
+/*********************/
+/* CUSTOM PROPERTIES */
+/*********************/
+:root {
+	--primary-text-clr:#111;
+	--secondary-text-clr: #fff;
+	--background-clr:#eee;
+	--primary-clr: #fff;
+	--secondary-clr: #e60012;
+	--sec-pad: 150px 0;
+}
+
