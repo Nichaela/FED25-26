@@ -11,6 +11,10 @@ body {
 	color: var(--text-clr);
 }
 
+nav ul {
+	display: flex;
+	gap: 1em;
+}
 
 .visually-hidden {
   clip: rect(0 0 0 0);
@@ -26,12 +30,28 @@ h2 {
 	font-family: 'Fira Sans', sans-serif;
 	font-size: 20px;
 	font-weight: bold;
+	margin-bottom: 0.5em;
 }
-
+/* how to? what does it do? */
+h2::before {
+	content: '';
+	height: 0.9em;
+	min-width: 0.15em;
+	background-color: var(--secondary-clr);
+	display:inline-block;
+	margin-bottom: auto;
+	margin-right: 0.2em;
+	border-radius: 0.5em;
+}
 h3 {
 	font-family: 'Fira Sans', sans-serif;
-	font-size: 14px;
-	font-weight: bold;
+	font-size: 0.em;
+	font-weight: regular;
+	padding: 0.8em;
+}
+
+p {
+	font-size: 8px;
 }
 
 header {
@@ -44,11 +64,56 @@ header {
 	height: 3em;
 }
 
-nav ul {
+
+img {
+	width: 100%;
+}
+
+article {
+	display: block;
+	border-radius: 5px;
+	overflow: hidden; 
+	/* background-color: #f5f6f7; */
+	background: var(--secondary-clr);
+}
+
+[aria-label="active"] {
+	background-color: var(--secondary-clr);
+	color: var(--secondary-text-clr);
+	padding-block: 0.5em;
+	border-radius: 1em;
+	
+}
+
+section:nth-of-type(1) ul:nth-of-type(1) {
 	display: flex;
+	background-color: var(--background-clr);
+	border-radius: 1em;
+	overflow: hidden;
 	gap: 1em;
 }
 
-@media (width: 375px) {
+section:nth-of-type(1) ul:nth-of-type(1) li {
 	
+	cursor:pointer;
+}
+
+
+@media (width: 375px) {
+	main {
+		max-width: 95%;
+		margin: 0 auto;
+	}
+	article > a > p {
+		display: none;
+	}
+	/* section:nth-child(1) > ul:nth-child(1) {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	section > ul > li {
+		
+	} */
+
+
 }

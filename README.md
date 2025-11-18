@@ -27,9 +27,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 </details>
 
 
-
-
-
 ## Je website
 
 <details open>
@@ -49,8 +46,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
  
 </details>
 
-
-
 ## Toegankelijkheidstest 1/2 (week 1)
 
 <details>
@@ -58,6 +53,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  - De home pagina heeft geen een heading
+  - De tab selectie gaat niet verder dan de tweede sectie
 
 </details>
 
@@ -87,8 +84,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Hamburger menu: 
   <img src="readme-images/breakdown_hamburger.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
-  ### Nieuws tab: 
-  <img src="readme-images/breakdown_nieuwstab.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  ### Detail pagina: 
+  <!-- <img src="" width="375px" alt="breakdown van nog een dynamisch deel"> -->
 </details>
 
 
