@@ -4,6 +4,19 @@ body {
 	color: var(--text-clr);
 }
 
+/* --- header & nav --- */
+
+
+header nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--secondary-clr);
+	padding: 1em;
+	color: var(--secondary-text-clr);
+	height: 3em;
+}
+
 header button {
 	width: 2.5em;
 	aspect-ratio: 1/1;
@@ -44,11 +57,13 @@ button.is-open span:nth-of-type(3){
   rotate: -45deg;
 }
 
+
 nav ul:nth-of-type(2) {
 	display: flex;
 	gap: 1em;
 }
 
+/* Source: A11y | Hides the headings from view */
 .visually-hidden {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
@@ -88,19 +103,13 @@ p {
 	font-size: 8px;
 }
 
-header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 1em;
-	background-color: var(--secondary-clr);
-	color: var(--secondary-text-clr);
-	height: 3em;
+main section > article:nth-of-type(1) {
+	margin-bottom: 1em;
 }
 
-
 img {
-	width: 100%;
+	max-height:100%; 
+	max-width:100%
 }
 
 article {
@@ -109,23 +118,24 @@ article {
 	overflow: hidden; 
 	/* background-color: #f5f6f7; */
 	background: var(--background-clr);
-	margin-bottom: 1em;
 }
 
 [aria-label="active"] {
 	background-color: var(--secondary-clr);
 	color: var(--secondary-text-clr);
-	padding-block: 0.5em;
+	padding: .5em 1em;
 	border-radius: 1em;
 	
 }
 
 main section ul:nth-of-type(1) {
 	display: flex;
+	align-items: center;
 	background-color: var(--background-clr);
 	border-radius: 1em;
 	overflow: hidden;
 	gap: 1em;
+
 }
 
 main section ul:nth-of-type(1) {
@@ -151,6 +161,10 @@ main section ul:nth-of-type(1) {
 	}
 
 	nav ul:nth-of-type(1) {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 1em;
+		padding: 4em;
 		position: fixed;
 		inset: 0;
 		translate: -100% 0;

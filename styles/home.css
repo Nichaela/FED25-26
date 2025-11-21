@@ -5,7 +5,7 @@
 /* JOUW STYLING */
 /****************/
 
-@media (width: 375px) {
+@media (width <= 500px) {
 	main {
 		max-width: 95%;
 		margin: 0 auto;
@@ -26,9 +26,6 @@
 		gap: 0.5em;
 	 }
 
-	 main ul:nth-of-type(2) li {
-		margin-bottom: 1em;
-	 }
 	 main ul:nth-of-type(2) li h3 {
 		max-height: 4em;
 	 }
