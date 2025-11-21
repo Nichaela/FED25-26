@@ -124,12 +124,29 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Stiene      | Nicha         | Anne    | Dylan        | Kasper |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | omdraaien titel & rondddraaiend grid       | hero slide hoe beginnen            | een element en dropdown button disable state     | hamburger menu 2 buttons & custom properties  |
+  | en dat ook nog | Tabs dynamisch active en unactive | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
+Stiene                                                    
+  | omdraaien titel & rondddraaiend grid          |          
+  | h2 en button & uit grid titel center          |                  
+ 
+  | Nicha
+  | hero slide hoe beginnen |
+  | Tabs dynamisch active en unactive|
+ 
+ 
+  | Anne                                          |
+  | een element en dropdown button disable state  |
+ 
+  | Kasper
+  |
+ 
+  | Dylan
+  | hamburger menu 2 buttons & custom properties
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
