@@ -56,6 +56,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   - De home pagina heeft geen een heading
   - De tab selectie gaat niet verder dan de tweede sectie
 
+  De narrator vertelt je alles wat je selecteert en schrijft. Dit kan erg desoriënterend zijn voor de gebruiker. Wanneer er een ingeklapte accordion ding open wordt gemaakt scant de Narrator hoeveel items erin staan. 
+ 
+  Het valt me op dat de Narrator bij het selecteren van de radio button dat de label als eerst wordt opgenoemd. Als de checkbox bijvoorbeeld wordt gemarkeerd dan hoor je:  “Onder de 10 euro |  Radio button | Selected | 1 of 4”.
+  Ik heb geleerd dat je de input van de radio button met het label kan koppelen door de id en for van het label dezelfde naam te geven of de input in het label te schrijven.
+
+  Caps lock f7 kopjes
+  Caps lock f6 links
+
+
 </details>
 
 
@@ -98,6 +107,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   opzetten html ging goed.
   De hamburger button z-index werkte niet. kwam er toen achter dat de hamburger button niet binnenin de nav staat. 
+
+  - Geleerd dat niet elke pief paf een sectie hoeft te zijn, een andere element is accurater.
+  - Aria label direct aan kunnen roepen in css
+
+  - Geleerd over verschillende selectoren
+  - In de les flexbox en grid geleerd. Moeite met hoe grid werkte. Geleerd dat het gaat om de lijnen, niet om de vakjes.
+
+  - Vergeten hoe je een blokje maakt. Even opzoeken in css en vertellen wat geleerd
+
+  Wat ging goed: het opzetten van het html en commit push gaat soepel
+
   <img src="readme-images/voortgang_1.png" width="375px" alt="1e voortgang">
 
 
