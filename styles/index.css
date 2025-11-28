@@ -1,10 +1,95 @@
+/* Source: A11y | Hides the headings from view */
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+h2 {
+	margin-top: 1em;
+	font-family: 'Fira Sans', sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 0.5em;
+}
+
+h2::before {
+	content: '';
+	height: 0.9em;
+	min-width: 0.15em;
+	background-color: var(--secondary-clr);
+	display:inline-block;
+	margin-bottom: auto;
+	margin-right: 0.2em;
+	border-radius: 0.5em;
+}
+h3 {
+	font-family: 'Fira Sans', sans-serif;
+	font-size: .9em;
+	font-weight: regular;
+	padding: 0.8em;
+	font-weight: bold;
+}
+
+p {
+	font-size: 8px;
+}
+
+
+
 body {
 	font-family: 'Fira Sans', sans-serif;
 	background-color: var(--primary-clr);
 	color: var(--text-clr);
 }
 
-/* --- header & nav --- */
+/* Source: A11y | Hides the headings from view */
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+h2 {
+	margin-top: 1em;
+	font-family: 'Fira Sans', sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 0.5em;
+}
+
+h2::before {
+	content: '';
+	height: 0.9em;
+	min-width: 0.15em;
+	background-color: var(--secondary-clr);
+	display:inline-block;
+	margin-bottom: auto;
+	margin-right: 0.2em;
+	border-radius: 0.5em;
+}
+h3 {
+	font-family: 'Fira Sans', sans-serif;
+	font-size: .9em;
+	font-weight: regular;
+	font-weight: bold;
+}
+
+p {
+	font-size: 8px;
+}
+
+/****************/
+/* header */
+/****************/
 
 
 header nav {
@@ -58,50 +143,28 @@ button.is-open span:nth-of-type(3){
 }
 
 
-nav ul:nth-of-type(2) {
+header nav ul:nth-of-type(2) {
 	display: flex;
 	gap: 1em;
 }
 
-/* Source: A11y | Hides the headings from view */
-.visually-hidden {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
+header nav ul:nth-of-type(2) a {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
 }
 
-h2 {
-	margin-top: 1em;
-	font-family: 'Fira Sans', sans-serif;
-	font-size: 20px;
-	font-weight: bold;
-	margin-bottom: 0.5em;
+header nav ul:nth-of-type(2) svg {
+	fill: white;
 }
 
-h2::before {
-	content: '';
-	height: 0.9em;
-	min-width: 0.15em;
-	background-color: var(--secondary-clr);
-	display:inline-block;
-	margin-bottom: auto;
-	margin-right: 0.2em;
-	border-radius: 0.5em;
-}
-h3 {
-	font-family: 'Fira Sans', sans-serif;
-	font-size: 0.em;
-	font-weight: regular;
-	padding: 0.8em;
+main > section:not(:first-of-type) {
+    max-width: 95%;
+    margin: 0 auto;
 }
 
-p {
-	font-size: 8px;
-}
+
 
 main section > article:nth-of-type(1) {
 	margin-bottom: 1em;
@@ -112,55 +175,46 @@ img {
 	max-width:100%
 }
 
-article {
+main > section:not(:first-of-type) article {
 	display: block;
-	border-radius: 5px;
+	border-radius: 0.3em;
 	overflow: hidden; 
-	/* background-color: #f5f6f7; */
 	background: var(--background-clr);
 }
 
-[aria-label="active"] {
+
+
+/* [aria-label="active"] {
 	background-color: var(--secondary-clr);
 	color: var(--secondary-text-clr);
 	padding: .5em 1em;
 	border-radius: 1em;
 	
-}
-
-main section ul:nth-of-type(1) {
-	display: flex;
-	align-items: center;
-	background-color: var(--background-clr);
-	border-radius: 1em;
-	overflow: hidden;
-	gap: 1em;
-
-}
-
-main section ul:nth-of-type(1) {
-    margin-bottom: 1em;
-} 
-
-/* section:nth-of-type(1) ul:nth-of-type(1) li {
-	
-	cursor:pointer;
 } */
 
 
-@media (width <= 375px) {
-	
+footer {
+	background-color: var(--secondary-clr);
+	color: var(--secondary-text-clr);
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 2em 1em;
+	margin-top: 2em;
+}
+
+@media (width <= 600px) {
 	header {
 		position: sticky;
 		top: 0;
 	}
 
-	nav button {
+	header nav button {
 		position: relative;
 		z-index: 1;
 	}
 
-	nav ul:nth-of-type(1) {
+	header nav ul:nth-of-type(1) {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr;
 		gap: 1em;
@@ -170,8 +224,8 @@ main section ul:nth-of-type(1) {
 		translate: -100% 0;
 		transition: 1s;
 	}
-	
-	nav.is-open ul {
+
+	header nav.is-open ul {
 		translate: 0 0;
 	}
 }

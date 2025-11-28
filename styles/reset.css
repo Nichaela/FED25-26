@@ -3,11 +3,11 @@
 /**************/
 /* CSS REMEDY */
 /**************/
-*, *::after, *::before {
-	box-sizing: border-box;  
+*, *::after, *::before { 
 	margin: 0;
 	padding: 0;
 	border: 0;
+	border-color: transparent;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -16,4 +16,5 @@
     background-color: inherit;  
     color: inherit;
 	appearance: none;
+	list-style-type: "";
 }

@@ -1,32 +1,153 @@
+/****************/
+/* slides section */
+/****************/
+
+main section:nth-of-type(1) ul { 
+	margin:0;
+	padding:0;
+	list-style-type:"";
+	display:flex;
+	
+	overflow-x:auto;
+	
+	scroll-snap-type:x mandatory;
+	
+	@media (prefers-reduced-motion:no-preference) {
+		scroll-behavior:smooth;
+	}
+	
+	anchor-name: --carousel;
+}
+
+main > section:nth-of-type(1) ul {
+	
+	/* position fixed zorgt ervoor dat de knoppen altijd zichtbaar zijn */
+  &::scroll-button(*) {
+    position: static; 
+    position-anchor: --carousel;
+    position-visibility: always;
+    font-family: "Material Symbols Outlined";
+		
+		width:3em;
+		aspect-ratio:1/1;
+		border-radius:50%;
+		
+		border:none;
+		color:white;
+		background-color:dodgerblue;
+  }
+
+  &::scroll-button(right) {
+    position-area: bottom;
+    content: '→' / 'Next';
+		justify-self:end;
+  }
+
+  &::scroll-button(left) {
+    position-area: bottom;
+    content: '←' / 'Previous';
+		justify-self:start;
+  }
+	
+	&::scroll-button(*):disabled {
+		background-color:grey;
+	}
+}
 
 
+main > section:nth-of-type(1) ul li {
+	flex-basis:100%;
+	flex-shrink:0;
+	scroll-snap-align:center;
+}
+
+main > ul img {
+	display:block;
+}
 
 /****************/
-/* JOUW STYLING */
+/* tabs */
 /****************/
+
+main > section:not(:first-of-type) > ul:nth-of-type(1){
+	display: flex;
+	align-items: center;
+	background-color: var(--background-clr);
+	border-radius: 1em;
+	
+	gap: 1em;
+	scroll-target-group: auto;
+}
+main > section:not(:first-of-type) > ul:nth-of-type(1) a:target-current {
+	background-color: var(--secondary-clr);
+	color: white;
+	padding: .5em 1em;
+	border-radius: 1em;
+  	cursor: default;
+}
+
+main > section:not(:first-of-type) ul:first-of-type {
+    margin-bottom: 1em;
+} 
+
+/****************/
+/* updates section */
+/****************/
+
+main > section:not(:first-of-type) > ul:nth-of-type(2) {
+  list-style:none;
+  display:flex;
+  overflow-x:hidden;
+}
+main > section:not(:first-of-type) > ul:nth-of-type(2) li {
+	flex-basis: 100%;
+	flex-shrink: 0;
+}
+
+/****************/
+/* games section */
+/****************/
+main > section:nth-of-type(3) > div {
+	overflow-x: auto;
+	overscroll-behavior: contain;
+	display: flex;
+	flex-basis: 100%;
+	overflow: scroll;
+
+}
+
+main > section:nth-of-type(3) > div article {
+	min-width: 200px;
+	margin-right: 1em;
+	scroll-snap-align: center;
+}
+
+main > section:nth-of-type(3) > div article a {
+	display: flex;
+	flex-direction: column-reverse
+}
+
+main > section:nth-of-type(3) > div div {
+	padding: 0.8em;
+}
+
+
+
 
 @media (width <= 500px) {
-	main {
-		max-width: 95%;
-		margin: 0 auto;
-	}
-	article > a > p {
+	
+	main section:nth-of-type(2) article > a > p {
 		display: none;
 	}
-	/* section:nth-child(1) > ul:nth-child(1) {
-		display: flex;
-		flex-wrap: wrap;
-	}
-	section > ul > li {
-		
-	} */
-	main ul:nth-of-type(2) {
+
+	/* updates */
+	main > section:nth-of-type(2) > ul:nth-of-type(2) ul {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		gap: 0.5em;
 	 }
+}
 
-	 main ul:nth-of-type(2) li h3 {
-		max-height: 4em;
-	 }
+button:active {
+	transform: scale(0.95);
 }

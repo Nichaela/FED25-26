@@ -135,7 +135,7 @@ Stiene
   | h2 en button & uit grid titel center          |                  
  
   | Nicha
-  | hero slide hoe beginnen |
+  |  |
   | Tabs dynamisch active en unactive|
  
  
@@ -151,10 +151,24 @@ Stiene
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Grid column beter oefenen
+  - Scroll-snap-type: x mandatory zegt tegen kind dat het moet snappen. scroll-snap-align: center; hoort erbij
+  - motion reduced-motion :no-preference button
+  - content: "wat je leest/ziet / wat de screen reader leest";
+  - "content-visibility: visible" in een media query voor full window size wanneer je bv een summary details hebt
+  - details stylization with details ::marker {content: '';} 
+  dit is voor chrome en edge > voor elke browser kunnen verbergen!
+  - summary::after { content: "+";}
+  - html: <!-- <details open> --> css: details[open] summary::after { rotate: 45deg;} wanneer het open is kan je andere styling geven
+  - chrome://flags/
+
+  Resources: 
+  - Emet cheat sheet: https://docs.emmet.io/cheat-sheet/
+  - Adam argyle carousels with css: https://developer.chrome.com/blog/carousels-with-css
+  - carousel configurator: https://chrome.dev/carousel-configurator/
+  - kevin powell: animate details & summary with a few lines of CSS: https://www.youtube.com/watch?v=Vzj3jSUbMtI
+  - active unactive https://codepen.io/shooft/pen/wBKyoWx https://codepen.io/Nika-v-the-typescripter/pen/myPBxYJ
+
 
 </details>
 
@@ -182,13 +196,9 @@ Stiene
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
+  - 
 - ...
-
+- Voor font ook custom properties
 </details>
 
 
