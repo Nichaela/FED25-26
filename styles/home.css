@@ -1,16 +1,12 @@
-/****************/
-/* slides section */
-/****************/
+/******************************/
+/* 	     Slides section       */
+/******************************/
 
 main section:nth-of-type(1) ul { 
-	margin:0;
-	padding:0;
-	list-style-type:"";
 	display:flex;
-	
 	overflow-x:auto;
-	
 	scroll-snap-type:x mandatory;
+	padding-inline:15%;
 	
 	@media (prefers-reduced-motion:no-preference) {
 		scroll-behavior:smooth;
@@ -21,20 +17,17 @@ main section:nth-of-type(1) ul {
 
 main > section:nth-of-type(1) ul {
 	
-	/* position fixed zorgt ervoor dat de knoppen altijd zichtbaar zijn */
   &::scroll-button(*) {
     position: static; 
     position-anchor: --carousel;
     position-visibility: always;
     font-family: "Material Symbols Outlined";
-		
-		width:3em;
-		aspect-ratio:1/1;
-		border-radius:50%;
-		
-		border:none;
-		color:white;
-		background-color:dodgerblue;
+	width:3em;
+	aspect-ratio:1/1;
+	border-radius:50%;
+	border:none;
+	color:white;
+	background-color:dodgerblue;
   }
 
   &::scroll-button(right) {
@@ -54,9 +47,8 @@ main > section:nth-of-type(1) ul {
 	}
 }
 
-
 main > section:nth-of-type(1) ul li {
-	flex-basis:100%;
+	flex-basis:70dvw;
 	flex-shrink:0;
 	scroll-snap-align:center;
 }
@@ -65,9 +57,10 @@ main > ul img {
 	display:block;
 }
 
-/****************/
-/* tabs */
-/****************/
+/******************************/
+/* 	          tabs            */
+/******************************/
+
 
 main > section:not(:first-of-type) > ul:nth-of-type(1){
 	display: flex;
@@ -80,7 +73,7 @@ main > section:not(:first-of-type) > ul:nth-of-type(1){
 }
 main > section:not(:first-of-type) > ul:nth-of-type(1) a:target-current {
 	background-color: var(--secondary-clr);
-	color: white;
+	color: var(--primary-clr);
 	padding: .5em 1em;
 	border-radius: 1em;
   	cursor: default;
@@ -90,9 +83,21 @@ main > section:not(:first-of-type) ul:first-of-type {
     margin-bottom: 1em;
 } 
 
-/****************/
-/* updates section */
-/****************/
+
+/******************************/
+/* 	     Updates section      */
+/******************************/
+
+main > section:not(:first-of-type) article:nth-of-type(1) article {
+	margin-bottom: 1em;
+}
+
+main > section:not(:first-of-type) article {
+	display: block;
+	border-radius: 0.3em;
+	overflow: hidden; 
+	background: var(--background-clr);
+}
 
 main > section:not(:first-of-type) > ul:nth-of-type(2) {
   list-style:none;
@@ -104,9 +109,10 @@ main > section:not(:first-of-type) > ul:nth-of-type(2) li {
 	flex-shrink: 0;
 }
 
-/****************/
-/* games section */
-/****************/
+
+/******************************/
+/* 	     Games section        */
+/******************************/
 main > section:nth-of-type(3) > div {
 	overflow-x: auto;
 	overscroll-behavior: contain;

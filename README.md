@@ -149,8 +149,7 @@ Stiene
   | hamburger menu 2 buttons & custom properties
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
+ 
   - Grid column beter oefenen
   - Scroll-snap-type: x mandatory zegt tegen kind dat het moet snappen. scroll-snap-align: center; hoort erbij
   - motion reduced-motion :no-preference button
@@ -182,7 +181,7 @@ Stiene
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Het lukte me niet om de tabs dynamisch te wisselen. Ik had hulp gevraagd en kreeg een Dit komt denk ik do
 
 
   ### Agenda voor meeting
@@ -197,8 +196,14 @@ Stiene
 
   ### Verslag van meeting
   - 
-- ...
+- Stiene haar grid was kapot gegaan, dit kwam door een -4 styling in de button die onder grid stond.
 - Voor font ook custom properties
+- Geen margin gebruiken, voorkeur aan padding
+- 
+
+Sources: 
+- Grid template areas css tricks
+- CSS grid generator
 </details>
 
 
