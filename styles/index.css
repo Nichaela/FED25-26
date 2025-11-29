@@ -145,7 +145,10 @@ header nav ul:nth-of-type(2) a {
 }
 
 header nav svg {
-	fill: white;
+	fill: currentcolor;
+	margin-bottom: 4px;
+	width: 1em;
+	height: auto;
 }
 
 main > section:not(:first-of-type) {
