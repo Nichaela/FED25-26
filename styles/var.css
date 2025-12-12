@@ -4,9 +4,11 @@
 :root {
 	--primary-text-clr:#111;
 	--secondary-text-clr: #fff;
-	--background-clr:#eee;
+	--background-clr:#f5f6f7;
+	--stylization-clr: #e5e7eb;
 	--primary-clr: #fff;
 	--secondary-clr: #e60012;
 	--sec-pad: 150px 0;
+	--header-clr: 240, 240, 240;
 }
 

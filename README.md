@@ -230,8 +230,8 @@ Sources:
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+  Stap 1: games section opmaak
+  Te doen: pagina 2 breakdown, aria-labels, dark mode
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -293,6 +293,6 @@ Sources:
 
   1. bron 1
   2. bron 2
-  3. ...
+  3. [...](https://matthewlein.com/tools/ceaser)
 
 </details>
