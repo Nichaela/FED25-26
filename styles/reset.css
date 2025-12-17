@@ -17,4 +17,6 @@
     color: inherit;
 	appearance: none;
 	list-style-type: "";
+	box-sizing: border-box;
+	box-sizing: ;
 }

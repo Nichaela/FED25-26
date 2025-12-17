@@ -44,3 +44,5 @@ carousel.addEventListener('scroll', () => {
 
 window.addEventListener('load', updateActiveSlide);
 window.addEventListener('resize', updateActiveSlide);
+
+// chatgpt prompt 
