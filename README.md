@@ -254,7 +254,8 @@ Sources:
 </details>
 
 
-
+<!-- overscroll-behavior-x: contain;  voorkomt terug optie scroll ding 
+pointer-events: none; even opzoeken-->
 
 
 ## Eindgesprek (week 5)
