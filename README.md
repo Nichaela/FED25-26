@@ -41,8 +41,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/nintendo_home.png" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  Pokémon Game Detail
-  <img src="readme-images/nintendo_detailpage.png" width="375px" alt="omschrijving van de pagina">
+  Animal crossing home pagina
+  
+
  
 </details>
 
@@ -94,7 +95,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/breakdown_hamburger.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
   ### Animal crossing pagina: 
- <img width="1899" height="5887" alt="site2_breakdown" src="https://github.com/user-attachments/assets/be6a79cf-1843-4f7e-a141-9697da396aa6" />
+  <img width="1899" height="5887" alt="site2_breakdown" src="https://github.com/user-attachments/assets/de382a77-7201-48a0-91a6-963efca6d99e" />
+
 
 
 </details>
