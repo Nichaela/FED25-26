@@ -87,14 +87,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Bij het opzetten van de html zelf werd de nav lijst buiten de kader geduwd
   <img src="readme-images/Screenshot 2025-11-16 191455.png">
 
-  ### Home pagina: 
+  ### Nintendo Home pagina: 
   <img src="readme-images/breakdown_home.jpg" width="375px" alt="breakdown van de hele pagina">
 
   ### Hamburger menu: 
   <img src="readme-images/breakdown_hamburger.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
-  ### Detail pagina: 
-  <!-- <img src="" width="375px" alt="breakdown van nog een dynamisch deel"> -->
+  ### Animal crossing pagina: 
+  <img width="1899" height="5887" alt="site2_breakdown" src="https://github.com/user-attachments/assets/6ae4a39b-9d66-44eb-985d-51b38e715d67" />
+
 </details>
 
 
