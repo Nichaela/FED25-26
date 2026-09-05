@@ -8,8 +8,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 
-
-
 ## Jij
 
 <details open>
@@ -34,7 +32,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Je opdracht:
   link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
-  https://www.nintendo.com/nl-nl/ & https://store.nintendo.nl/nl/pokemon-legends-z-a-nintendo-switch-2-edition-70010000099366
+  https://www.nintendo.com/nl-nl/ & animalcrossing.nintendo.com
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Nintendo home 
@@ -72,7 +70,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Breakdownschets (week 1)
 
-<details>
+<details open>
   <summary> Breakdown uitwerking </summary>
   
    ### Aantekeningen: 
