@@ -94,7 +94,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/breakdown_hamburger.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
   ### Animal crossing pagina: 
-  <img width="1899" height="5887" alt="site2_breakdown" src="https://github.com/user-attachments/assets/6ae4a39b-9d66-44eb-985d-51b38e715d67" />
+ <img width="1899" height="5887" alt="site2_breakdown" src="https://github.com/user-attachments/assets/be6a79cf-1843-4f7e-a141-9697da396aa6" />
+
 
 </details>
 
