@@ -11,3 +11,10 @@
     font-weight: bold;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Arvo', serif;
+    font-style: italic;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/arvo/v23/tDbN2oWUg0MKqSIg75Tv.woff2) format('woff2');
+}

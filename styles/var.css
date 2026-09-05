@@ -2,13 +2,24 @@
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
+	
 	--primary-text-clr:#111;
 	--secondary-text-clr: #fff;
+
+	/* Nintendo home */
 	--background-clr:#f5f6f7;
 	--stylization-clr: #e5e7eb;
 	--primary-clr: #fff;
 	--secondary-clr: #e60012;
 	--sec-pad: 150px 0;
 	--header-clr: 240, 240, 240;
+
+	/* Animal Crossing home */
+	--ac-secondary-txt-clr: #834B16;
+	--ac-news-bg-clr: #FCC32C;
+	--ac-link-txt-clr: #ffe46a;
+	--ac-link-clr: #C4181F;
+	--ac-news-date-clr: #36AFB6;
+
 }
 

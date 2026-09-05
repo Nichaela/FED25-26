@@ -4,33 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animal Crossing</title>
+    <!-- css -->
+    <link href="styles/animalcrossing.css" rel="stylesheet">
+	<link href="styles/home.css" rel="stylesheet">
+	<link href="styles/fonts.css" rel="stylesheet">
+	<link href="styles/var.css" rel="stylesheet">
+	<link href="styles/reset.css" rel="stylesheet">
+
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><svg></svg></li>
+                <li><img src="images/logo.png" alt="Animal Crossing Logo"></li>
                 <li><a href="">Log in / Sign up</a></li>
             </ul>
         </nav>
     </header>
+
+    <!-- hero -->
     <section>
-        <h1>Animal Crossing</h1>
-        Official home of
+        <h1 class="visually-hidden">Animal Crossing</h1>
+        <span>Official home of</span>
+        <img src="images/animal-crossing/logo.png" alt="Brown Animal Crossing Logo with yellow text: "Welcome to Animal Crossing" with a clock on top">
         <div>
             <p>Make friends with adorable animal villagers and have fun creating a world of your own in the Animal Crossing series.</p>
         </div>
     </section>
+
+    <!-- birthday -->
     <div>
         <div>
-            <p></p>
-            <ul>
-                <li><button>svg</button></li>
-                <li><button>svg</button></li>
+            <p>Today is</p>
+            <p>Greta's Birthday</p>
+            <nav><ul>
+                <li><button><span class="visually-hidden">Go to previous day's birthday character.</span></button></li>
+                <li><button><span class="visually-hidden">Go to next day's birthday character.</span></button></li>
             </ul>
+            <img src="images/animal-crossing/CTRP_EAA_NPC-mus16_1_R_ad.png" alt=""></nav>
         </div>
     </div>
+
+    <!-- news -->
     <article>
+        <!-- yellow triangle div -->
+        <div></div> 
+        <h2>Animal Crossing News</h2>
         <ul>
             <li>
                 <date>jul 22, 2026</date>
@@ -38,7 +57,68 @@
                 <img src="" alt="">
                 <a></a>
             </li>
+            <li>
+                <date>jul 22, 2026</date>
+                <p></p>
+                <img src="" alt="">
+                <a></a>
+            </li>
+            <li>
+                <date>jul 22, 2026</date>
+                <p></p>
+                <img src="" alt="">
+                <a></a>
+            </li>
+            <a>See all news</a>
         </ul>
     </article>
+
+    <!-- video section about switch 2 -->
+    <section>
+        <video src=""></video>
+        <a>Animal Crossing: New Horizons and Animal Crossing: New Horizons - Nintendo Switch 2 Edition</a>
+        <p>Whether you're just getting the lay of the land or revisiting your island paradise, 
+            there are new surprises to discover in the most recent update coming to the game! 
+            Decorate guest rooms at the resort hotel, create and build in a dream space on Slumber Island, and more. 
+            Plus, the Animal Crossing: New Horizons – Nintendo Switch 2 Edition is coming soon!</p>
+        <a>Visit the website</a>
+    </section>
+
+    <!-- pocket camp section -->
+    <article>
+        <div>
+            <img src="" alt="">
+            <img src="" alt="">
+            <h2>Design a campsite that suits your style!</h2>
+            <p>As a campsite manager, it's up to you to build a fun campsite in the Animal Crossing: Pocket Camp Complete mobile game. 
+                While working as the manager, you can fish, catch bugs, chat with animal pals, and collect your favorite furniture. 
+                From tents and swings to lazy rivers and merry-go-rounds, there are over 10,000 items you can use to decorate your campsite to your taste. 
+                You can also change into your favorite outfit, make lots of detours, and enjoy your relaxing camp life!</p>
+            <a>Learn more</a>
+        </div>
+    </article>
+
+     <!-- Amiibo section -->
+    <article>
+        <ul>
+            <li>
+                <img src="./images/animal-crossing/amiibo-isabelle_2x.png" alt="image of the Isabelle amiibo figurine">
+                <p>Isabelle - Summer Outfit</p>
+            </li>
+            <li>
+                <img src="./images/animal-crossing/amiibo-kapn_2x.png" alt="image of the Kapp'n amiibo figurine">
+                <p>Kapp'n</p>
+            </li>
+            <li>
+                <img src="./images/animal-crossing/amiibo-rover_2x.png" alt="image of the Rover amiibo figurine">
+                <p>Rover</p>
+            </li>
+            <li>
+                <img src="./images/animal-crossing/amiibo-timmytommy_2x.png" alt="image of the Timmy & Tommy amiibo figurine">
+                <p>Timmy & Tommy</p>
+            </li>
+        </ul>
+    </article>
+     
 </body>
 </html>
