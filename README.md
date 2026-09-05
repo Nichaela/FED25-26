@@ -8,8 +8,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
 
-
-
 ## Jij
 
 <details open>
@@ -34,15 +32,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Je opdracht:
   link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
-  https://www.nintendo.com/nl-nl/ & https://store.nintendo.nl/nl/pokemon-legends-z-a-nintendo-switch-2-edition-70010000099366
+  https://www.nintendo.com/nl-nl/ & animalcrossing.nintendo.com
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Nintendo home 
   <img src="readme-images/nintendo_home.png" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  Pokémon Game Detail
-  <img src="readme-images/nintendo_detailpage.png" width="375px" alt="omschrijving van de pagina">
+  Animal crossing home pagina
+  
+
  
 </details>
 
@@ -71,7 +70,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Breakdownschets (week 1)
 
-<details>
+<details open>
   <summary> Breakdown uitwerking </summary>
   
    ### Aantekeningen: 
@@ -87,14 +86,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Bij het opzetten van de html zelf werd de nav lijst buiten de kader geduwd
   <img src="readme-images/Screenshot 2025-11-16 191455.png">
 
-  ### Home pagina: 
+  ### Nintendo Home pagina: 
   <img src="readme-images/breakdown_home.jpg" width="375px" alt="breakdown van de hele pagina">
 
   ### Hamburger menu: 
   <img src="readme-images/breakdown_hamburger.jpg" width="375px" alt="breakdown van een dynamisch deel">
 
-  ### Detail pagina: 
-  <!-- <img src="" width="375px" alt="breakdown van nog een dynamisch deel"> -->
+  ### Animal crossing pagina: 
+  <img width="1899" height="5887" alt="site2_breakdown" src="https://github.com/user-attachments/assets/de382a77-7201-48a0-91a6-963efca6d99e" />
+
+
+
 </details>
 
 
