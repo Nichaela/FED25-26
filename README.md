@@ -179,12 +179,11 @@ Stiene
 
 ## Voortgang 2 (week 3)
 
-<details>
+<details open>
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  Het lukte me niet om de tabs dynamisch te wisselen. Ik had hulp gevraagd en kreeg een Dit komt denk ik do
-
+  
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -201,7 +200,9 @@ Stiene
 - Stiene haar grid was kapot gegaan, dit kwam door een -4 styling in de button die onder grid stond.
 - Voor font ook custom properties
 - Geen margin gebruiken, voorkeur aan padding
-- 
+
+  ### Plan 26-27
+  
 
 Sources: 
 - Grid template areas css tricks
