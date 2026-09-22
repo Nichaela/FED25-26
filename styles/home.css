@@ -19,7 +19,7 @@ main section:nth-of-type(1) ul {
 
 main > section:nth-of-type(1) ul {
 	padding-block: 2em 1em;
-	background-color: var(--primary-text-clr);
+	background-color: var(--black);
   &::scroll-button(*) {
     position: static; 
     position-anchor: --carousel;
@@ -76,6 +76,7 @@ main section:nth-of-type(1) ul img {
 	display:block;
 	width:100%;
 	height:auto;
+	border-radius: .2em;
 }
 
 main > ul img {
@@ -86,6 +87,9 @@ main > ul img {
 /* 	          tabs            */
 /******************************/
 
+main > section:not(:first-of-type) > ul:nth-of-type(1) {
+	overflow-x: auto;
+}
 
 main > section:not(:first-of-type) > ul:nth-of-type(1){
 	display: inline-flex;
@@ -93,23 +97,30 @@ main > section:not(:first-of-type) > ul:nth-of-type(1){
 	background-color: var(--background-clr);
 	border-radius: 1em;
 	margin-bottom: 1em;
-	padding: .6em .2em;
-	max-width: max-content;
+	padding: .25em;
+	max-width: 100%;
 	gap: 1em;
 	/* zorgt voor target-current ? */
 	scroll-target-group: auto;
-	overflow-x: auto;
 }
 
-main > section:not(:first-of-type) > ul:nth-of-type(1) li:hover {
+main > section:not(:first-of-type) > ul:nth-of-type(1) a:hover {
 	text-decoration: underline;
+	cursor: pointer;
+	color: var(--white);
+	background-color: var(--primary-clr);
+}
+
+main > section:not(:first-of-type) > ul:nth-of-type(1) a {
+	display: inline-block;
+    padding: .5em 1.3em; /* same padding on ALL links, not just active */
+    border-radius: 1em;
 }
 
 main > section:not(:first-of-type) > ul:nth-of-type(1) a:target-current {
-	background-color: var(--secondary-clr);
-	color: var(--primary-clr);
-	padding: .5em 1.3em;
-	border-radius: 1em;
+	color: var(--white);
+	background-color: var(--primary-clr);
+	
   	cursor: default;
 }
 
@@ -142,12 +153,12 @@ main > section:not(:first-of-type) article {
 } */
 
 main > section:nth-of-type(2) > ul:nth-of-type(2) {
-  display:flex;
-  overflow-x:hidden;
+  display: flex;
+  overflow-x: hidden;
 }
 
 main > section:nth-of-type(2) > ul:nth-of-type(2) h3 {
-  padding: .8em;
+  padding: 1em .8em;
 }
 
 main > section:nth-of-type(2) > ul:nth-of-type(2) li {
@@ -182,8 +193,6 @@ main > section:nth-of-type(3) > ul:nth-of-type(2) {
 	overscroll-behavior: contain;
 	display: flex;
 	flex-basis: 100%;
-	
-	/* overflow: scroll; */
 }
 
 /* main > section:nth-of-type(3) > ul:nth-of-type(2) li {

@@ -1,6 +1,6 @@
 
 // hamburger menu
-const hamburgerButton = document.querySelector("header button");
+const hamburgerButton = document.querySelector("header nav button");
 const headerNav = document.querySelector("header nav");
 
 // hero carousel
@@ -11,8 +11,10 @@ hamburgerButton.onclick = toggleMenu;
 
 // hamburger menu
 function toggleMenu() {
-  headerNav.classList.toggle("is-open");
+  hamburgerButton.classList.toggle("is-open")
 }
+
+// volgende blok is van Sanne 't Hooft uitleg
 
 // zorgt er voor dat de zijkanten blurry zijn
 function updateActiveSlide() {
@@ -44,5 +46,4 @@ carousel.addEventListener('scroll', () => {
 
 window.addEventListener('load', updateActiveSlide);
 window.addEventListener('resize', updateActiveSlide);
-
-// chatgpt prompt 
+// eind blok Sanne 't Hooft

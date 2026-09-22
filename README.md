@@ -179,10 +179,11 @@ Stiene
 
 ## Voortgang 2 (week 3)
 
-<details>
+<details open>
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
+<<<<<<< HEAD
   Het lukte me niet om de tabs dynamisch te wisselen. 
 
   hamburger menu gefixt en styling van header.
@@ -192,6 +193,9 @@ Stiene
   Geprobeerd met Javascript current target alleen een kleurtje te geven maar blijkbaar had ik dat vorig jaar al gedaan. ik was vergeten dat als je :target-current gebruikt op een element dat het hetzelfde kan doen!
 
   Plan:
+=======
+  
+>>>>>>> 9ed53ebb6b95f1727cbae882b238a5dc9c5ccf57
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -208,7 +212,9 @@ Stiene
 - Stiene haar grid was kapot gegaan, dit kwam door een -4 styling in de button die onder grid stond.
 - Voor font ook custom properties
 - Geen margin gebruiken, voorkeur aan padding
-- 
+
+  ### Plan 26-27
+  
 
 Sources: 
 - Grid template areas css tricks

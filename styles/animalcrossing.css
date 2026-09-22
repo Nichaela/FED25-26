@@ -1,59 +1,151 @@
 body {
-    font-family: 'arvo', serif;
+    font-family: 'Arvo', serif;
     font-size: 1em;
     line-height: 1.75;
     color: var(--ac-secondary-txt-clr);
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 a {
     color: var(--ac-link-txt-clr);
 }
 
+h1, h2, h3 {
+    font-family: 'Arvo', serif;
+    line-height: 1.5;
+}
+h2, span  {
+    color: var(--ac-secondary-txt-clr);
+}
+
 h2 {
-    text-align: center;
+    margin-bottom: 24px;
+    font-size: 1.375rem;
+    display: block;
+    font-weight: 700;
+}
+
+/* buttons */
+main > section div > a {
+    display: inline-block;
+    color: var(--ac-link-txt-clr);
+    background-color: var(--ac-link-clr);
+    padding-block: 7px 8px;
+    font-size: 1.115rem;
+    font-weight: 700;
+    padding: 0.938em 2.813em;
+    border-radius: 0.938em;
+    margin-top: 1em;
+}
+
+/****************/
+/*     nav    	*/
+/****************/
+
+header > nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ac000d;
+    height: 3.75em;
+    background-color: var(--primary-clr);
+    padding-inline: 1.875em;
+}
+
+header > nav img {
+    display: block;
+    width: 97px;
+}
+
+@media (max-width: 768px) {
+    header > nav img {
+        height: 48px;
+    }
+    
 }
 
 /****************/
 /*   hero    	*/
 /****************/
 
+
+
 header > div:nth-of-type(1) {
+    background: var(--ac-link-txt-clr);
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 70;
+    text-transform:uppercase;
+    font-size: 0.875em;
+}
+
+header > div:nth-of-type(2) {
     background-image: url('../images/animal-crossing/hero-bg.jpg');
     background-size: cover;
     background-position: center;
     margin: 0 auto;
+    padding: 1.56em 0;
     text-align: center;
     height: auto;
     background-size: cover;
     background-position: 50% 50%;
     overflow: hidden;
+    position: relative;
 }
 
-header > div:nth-of-type(1) > img:nth-of-type(2) {
-    max-width: 175px
+header > div:nth-of-type(2) p {
+    padding: 1em 0;
 }
 
-header > div:nth-of-type(1) > div {
+header > div:nth-of-type(2) span {
+    line-height: 1.4;
+    white-space: nowrap;
+    text-align: center;
+    width: 100%;
+    font-size: 1.25em;
+    font-weight: 700;
+}
+
+header > div:nth-of-type(2) > img:nth-of-type(1) {
+    max-width: 52%;
+    display: block;
+    margin: .625em auto 0;
+}
+
+header > div:nth-of-type(2) > img:nth-of-type(2) {
+    max-width: 175px;
+    position: relative;
+    z-index: 1;
+
+}
+
+header > div:nth-of-type(2) > div {
     background-image: url('../images/animal-crossing/sign_2x.png');
     background-size: 115% 100%;
     background-position: 50% 50%;
     padding: 10px 25px 60px 25px;
+    line-height: 1.5em;
     color: #fff;
     width: 100%;
     max-width: 300px;
     text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
     margin: 0 auto;
+    margin-top: -5em;
+    position: relative;
+    z-index: 2;
 }
 
-header > div:nth-of-type(1) p {
-    padding: 1em 0;
-}
 
 /****************/
 /*   Birthday   */
 /****************/
 
-header > div:nth-of-type(2) {
+header > div:nth-of-type(3) {
    background-image: url(/images/animal-crossing/birthday-red_2x.jpg);
      /* -webkit-transform: translateY(-50%); 
      transform: translateY(-50%); 
@@ -63,17 +155,32 @@ header > div:nth-of-type(2) {
     width: 100%;
 }
 
-header > div:nth-of-type(2) > div {
+header > div:nth-of-type(3) > div {
    background-image: url(/images/animal-crossing/birthday-ribbon.svg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     width: 100%;
 } 
-header > div:nth-of-type(2) img {
+
+header > div:nth-of-type(3) p:nth-of-type(1) {
+    color: var(--ac-link-txt-clr);
+    font-weight: 700;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+header > div:nth-of-type(3) p:nth-of-type(2) {
+    font-size: 1.375em;
+    color: var(--white);
+    font-weight: 700;
+    line-height: 1.35;
+    margin-bottom: 5px;
+}
+
+header > div:nth-of-type(3) img {
     max-height: 250px;
 }
 
-header > div:nth-of-type(2) > div > button:nth-of-type(1)::after {
+header > div:nth-of-type(3) > div > button:nth-of-type(1)::after {
     width: 100%;
     height: 100%;
     top: 0;
@@ -89,7 +196,7 @@ header > div:nth-of-type(2) > div > button:nth-of-type(1)::after {
 /*     News	    */
 /****************/
 
-main > section div:nth-of-type(1) {
+main > section:nth-of-type(1) {
     background-image: linear-gradient(-180deg, #fbbb37 0%, #fdd119 100%);
     padding-top: 80px;
 }
@@ -99,15 +206,6 @@ main > section div:nth-of-type(1) div {
     background-repeat: repeat;
 } 
 
-/* main > section:nth-of-type(1) a {
-    color: var(--ac-link-txt-clr);
-    background-color: var(--ac-link-clr);
-    padding-block: 7px 8px;
-    font-size: 1.115rem;
-    font-weight: bold;
-    padding: 15px 45px;
-    border-radius: 15px;
-} */
 
 main > section div:nth-of-type(1) > article {
     background-color: white;
@@ -117,7 +215,7 @@ main > section div:nth-of-type(1) > article {
     display: flex;
     text-align: center;
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.3);
-    font-weight: bold;
+    font-weight: 700;
 }
 
 main > section div:nth-of-type(1) > article time {
@@ -160,21 +258,33 @@ main > section div:nth-of-type(1) > article > a {
 /*     Video    */
 /****************/
 
-main > section:nth-of-type(2){
-    background-color: #fdd119;
+
+main > section:nth-of-type(1) div:nth-of-type(2) {
+    margin: 0 1.25em;
 }
 
-main > section:nth-of-type(2) h3 {
-    font-weight: bold;
+main > section:nth-of-type(1) div:nth-of-type(2) h3 a {
+    color: var(--ac-secondary-txt-clr);
+    font-weight: 700;
     display: block;
     clear: both;
     width: 100%;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin: 15px 0;
     font-size: 1.125em;
     text-decoration: none;
 }
 
+/* main > section:nth-of-type(1) div { 
+     background-size: 995px 125px;
+    height: 125px;
+} 
+
+main > section:nth-of-type(1) div:nth-of-type(3) {
+    background-image: url('images/animal-crossing/apple-border-top_2x.png');
+content: '';
+} */
+
+/* Copy paste van de website zelf */
 .fancy-border:after{
     background-image: url('../images/animal-crossing/corner-left-top_2x.png'), 
     url('../images/animal-crossing/corner-right-top_2x.png'), 
@@ -193,31 +303,153 @@ main > section:nth-of-type(2) h3 {
     position: absolute;
 }
 
+
+/****************/
+/*     Camp   */
+/****************/
+
+main > section:nth-of-type(2) {
+    padding: 2.25em 0.75em;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    content: "";
+    background-image: url(../images/animal-crossing/pattern-stripes.jpg);
+    background-size: 20px 20px;
+    -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+main > section:nth-of-type(2) > div {
+    background-image: url(../images/animal-crossing/pattern-trees.jpg);
+    background-size: 150px 100px;
+    padding: 1.75em 1.125em;
+}
+
+main > section:nth-of-type(2) h2 {
+    font-size: 1.5rem;
+    color: var(--ac-camp-heading-clr);
+}
+
+main > section:nth-of-type(2) img {
+        max-width: 100%;
+}
+
+main > section:nth-of-type(2) img:nth-of-type(1) {
+    margin-bottom: -42px;
+}
+
+main > section:nth-of-type(2) p {
+    margin-top: 1rem;
+    color: var(--ac-camp-text-clr);
+    line-height: 1.5;
+}
+
 /****************/
 /*     Amiibo   */
 /****************/
 
-article:nth-of-type(3) ul li img {
+main > section:nth-of-type(3) ul li img {
     max-height: 100px;
     max-width: 100px;
 }
 
+/***********************/
+/*     Play Nintendo   */
+/***********************/
 
-h1, h2, h3 {
-    font-family: 'Arvo', serif;
-    padding: 0.65em 0 0.45em 0;
-    line-height: 1.5;
-}
-h2, span  {
-    color: var(--ac-secondary-txt-clr);
+section:nth-of-type(4) ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-inline: 1em;
 }
 
-h2 {
-    margin-bottom: 24px;
-    font-size: 1.375rem;
+main > section:nth-of-type(4) li {
+    background-color: var(--ac-play-clr);
+    width: 100%;
     display: block;
-    font-weight: bold;
 }
+
+main > section:nth-of-type(4) li a {
+    display: flex;
+    border: solid 4px var(--black);
+    box-shadow: 0 calc(4px * 2) 0 4px * -1 var(--black);
+    transition: box-shadow 0.1s ease-in;
+    transition-property: transform, box-shadow;
+    will-change: box-shadow;
+}
+
+main > section:nth-of-type(4) li:nth-child(odd) a img {
+    order: 1;
+}
+
+main > section:nth-of-type(4) li a div {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-inline: 1em;
+    padding-block: 1em;
+    color: var(--black);    
+}
+
+main > section:nth-of-type(4) li:nth-child(odd) a div {
+    order: 2;
+    text-align: right;
+}
+
+main > section:nth-of-type(4) li:nth-child(odd) a div span {
+    align-self: flex-end;
+}
+
+main > section:nth-of-type(4) li:nth-child(even) a div span {
+    align-self: flex-start;
+}
+
+
+main > section:nth-of-type(4) div span {
+    order: 1;
+    color: var(--black); 
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    border-radius: 2em;
+    background-color: var(--ac-play-accent-clr);
+    margin: 0em;
+    padding: 0.25em 0.75em 0.125em;
+}
+
+main > section:nth-of-type(4) span:hover {
+    transform: rotateX(360deg);
+}
+
+main > section:nth-of-type(4) div h3 {
+    order: 2;
+    line-height: 1.4;
+    font-size: 1.125rem;
+    font-weight: 700;
+    padding: 0;
+}
+
+main > section:nth-of-type(4) div p {
+    order: 3;
+    font-size: 0.875rem;
+    padding: 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;  
+    -webkit-line-clamp: 3; 
+    /* genAI prompt: What does "Also define the standard property 'line-clamp' for compatibility mean": antwoord: in safari en firefox heb je de extra line nodig  */
+    line-clamp: 3;
+    overflow: hidden; 
+}
+
+
+main > section:nth-of-type(4) img{
+    width: 50%;
+}
+
 
 
 
@@ -251,13 +483,5 @@ h2 {
 	}
 } */
 
-    header nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: var(--secondary-clr);
-        padding: 1em;
-        color: var(--secondary-text-clr);
-        height: 3em;
-    }   
+    
 }
