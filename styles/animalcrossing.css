@@ -16,6 +16,7 @@ h1, h2, h3 {
     font-family: 'Arvo', serif;
     line-height: 1.5;
 }
+
 h2, span  {
     color: var(--ac-secondary-txt-clr);
 }
@@ -150,16 +151,47 @@ header > div:nth-of-type(3) {
      /* -webkit-transform: translateY(-50%); 
      transform: translateY(-50%); 
      background-position: center top;  */
-
     background-size: 1em;
     width: 100%;
 }
 
 header > div:nth-of-type(3) > div {
-   background-image: url(/images/animal-crossing/birthday-ribbon.svg);
+    position: relative;
+    width: 100%;
+}
+
+/* genAI prompt: how come the children of a scaled div also scale? */
+header > div:nth-of-type(3) > div::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("/images/animal-crossing/birthday-ribbon.svg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    width: 100%;
+    transform: scaleY(1.1);
+    transform-origin: center;
+    z-index: 0;
+    margin-inline: 10px;
+}
+
+header > div:nth-of-type(3) > div > * {
+    position: relative;
+    z-index: 1;
+}
+header > div:nth-of-type(3) > div > div > div{
+    position: absolute;
+    background-size: 337px 235px;
+    width: 337px;
+    height: 235px;
+    z-index: -1;
+    opacity: 1;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: block;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    background-image: url("/images/animal-crossing/confetti_2x.png");
 } 
 
 header > div:nth-of-type(3) p:nth-of-type(1) {
