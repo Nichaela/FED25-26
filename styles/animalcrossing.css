@@ -1,12 +1,23 @@
 body {
     font-family: 'arvo', serif;
+    font-size: 1em;
+    line-height: 1.75;
+    color: var(--ac-secondary-txt-clr);
+}
+
+a {
+    color: var(--ac-link-txt-clr);
+}
+
+h2 {
+    text-align: center;
 }
 
 /****************/
 /*   hero    	*/
 /****************/
 
-section:nth-of-type(1) {
+header > div:nth-of-type(1) {
     background-image: url('../images/animal-crossing/hero-bg.jpg');
     background-size: cover;
     background-position: center;
@@ -16,16 +27,16 @@ section:nth-of-type(1) {
     background-size: cover;
     background-position: 50% 50%;
     overflow: hidden;
-    
 }
 
-section:nth-of-type(1) div {
-    background-image: url('../images/animal-crossing/sign_2x.png');
+header > div:nth-of-type(1) > img:nth-of-type(2) {
+    max-width: 175px
+}
 
-    background-size: 100%;
+header > div:nth-of-type(1) > div {
+    background-image: url('../images/animal-crossing/sign_2x.png');
     background-size: 115% 100%;
     background-position: 50% 50%;
-    position: relative;
     padding: 10px 25px 60px 25px;
     color: #fff;
     width: 100%;
@@ -34,42 +45,37 @@ section:nth-of-type(1) div {
     margin: 0 auto;
 }
 
+header > div:nth-of-type(1) p {
+    padding: 1em 0;
+}
+
 /****************/
 /*   Birthday   */
 /****************/
 
-div:nth-of-type(1) {
+header > div:nth-of-type(2) {
    background-image: url(/images/animal-crossing/birthday-red_2x.jpg);
+     /* -webkit-transform: translateY(-50%); 
+     transform: translateY(-50%); 
+     background-position: center top;  */
 
-    position: absolute;
-    
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    background-position: center top;
-
-    background-size: 17px 17px;
+    background-size: 1em;
     width: 100%;
 }
 
-div:nth-of-type(1) div {
+header > div:nth-of-type(2) > div {
    background-image: url(/images/animal-crossing/birthday-ribbon.svg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    position: relative;
     width: 100%;
 } 
-div:nth-of-type(1) img {
+header > div:nth-of-type(2) img {
     max-height: 250px;
 }
 
-div:nth-of-type(1) a {
-    color: var(--ac-link-txt-clr);
-}
-
-div:nth-of-type(1) div button:nth-of-type(1)::after {
+header > div:nth-of-type(2) > div > button:nth-of-type(1)::after {
     width: 100%;
     height: 100%;
-    position: absolute;
     top: 0;
     left: 0;
     content: '';
@@ -83,18 +89,17 @@ div:nth-of-type(1) div button:nth-of-type(1)::after {
 /*     News	    */
 /****************/
 
-/* article:nth-of-type(1) {
+main > section div:nth-of-type(1) {
     background-image: linear-gradient(-180deg, #fbbb37 0%, #fdd119 100%);
     padding-top: 80px;
-    position: relative;
-
 }
 
-article:nth-of-type(1) div {
+main > section div:nth-of-type(1) div {
     background-image: url('../images/animal-crossing/triangles-yellow.png');
-} */
+    background-repeat: repeat;
+} 
 
-article:nth-of-type(1) a {
+/* main > section:nth-of-type(1) a {
     color: var(--ac-link-txt-clr);
     background-color: var(--ac-link-clr);
     padding-block: 7px 8px;
@@ -102,11 +107,105 @@ article:nth-of-type(1) a {
     font-weight: bold;
     padding: 15px 45px;
     border-radius: 15px;
+} */
+
+main > section div:nth-of-type(1) > article {
+    background-color: white;
+    margin: 0 1.875em 1.5em 1.875em;
+    padding: 24px 12px 15px 12px;
+    border-radius: .5em;
+    display: flex;
+    text-align: center;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.3);
+    font-weight: bold;
 }
+
+main > section div:nth-of-type(1) > article time {
+    color: var(--ac-news-date-clr);
+    display: block;
+    font-size: .9rem;
+    padding: 0 10px .75em;
+}
+
+main > section div:nth-of-type(1) > article a h3 {
+    font-size: 1.1rem;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+main > section div:nth-of-type(1) > article a span {
+    color: var(--ac-link-clr);
+    padding-top: .75em;
+}
+
+main > section div:nth-of-type(1) > article img {
+    border-radius: .75em;
+    width: 100%;
+}
+
+main > section div:nth-of-type(1) > article > a {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* section:nth-of-type(1) > article a {
+    background-color: transparent;
+    color: var(--ac-link-clr);
+} */
+
+/****************/
+/*     Video    */
+/****************/
+
+main > section:nth-of-type(2){
+    background-color: #fdd119;
+}
+
+main > section:nth-of-type(2) h3 {
+    font-weight: bold;
+    display: block;
+    clear: both;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 1.125em;
+    text-decoration: none;
+}
+
+.fancy-border:after{
+    background-image: url('../images/animal-crossing/corner-left-top_2x.png'), 
+    url('../images/animal-crossing/corner-right-top_2x.png'), 
+    url('../images/animal-crossing/corner-left-bottom_2x.png'), 
+    url('../images/animal-crossing/corner-left-right_2x.png');
+    background-position: 0 0, 100% 0, 0 100%, 100% 100%;
+    background-size: 53px 53px;
+    background-repeat: no-repeat;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: -10px;
+    margin: auto;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    position: absolute;
+}
+
+/****************/
+/*     Amiibo   */
+/****************/
+
+article:nth-of-type(3) ul li img {
+    max-height: 100px;
+    max-width: 100px;
+}
+
 
 h1, h2, h3 {
     font-family: 'Arvo', serif;
-    margin: 0.65em 0 0.45em 0;
+    padding: 0.65em 0 0.45em 0;
     line-height: 1.5;
 }
 h2, span  {
@@ -124,7 +223,6 @@ h2 {
 
 @media (width <= 600px) {
 	header {
-		position: sticky;
 		top: 0;
 		z-index: 2;
 	}
