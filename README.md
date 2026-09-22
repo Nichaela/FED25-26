@@ -110,7 +110,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   opzetten html ging goed.
   De hamburger button z-index werkte niet. kwam er toen achter dat de hamburger button niet binnenin de nav staat. 
 
-  - Geleerd dat niet elke pief paf een sectie hoeft te zijn, een andere element is accurater.
+  - Geleerd dat niet elke element een sectie hoeft te zijn, een andere element is accurater.
   - Aria label direct aan kunnen roepen in css
 
   - Geleerd over verschillende selectoren
@@ -183,8 +183,15 @@ Stiene
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  Het lukte me niet om de tabs dynamisch te wisselen. Ik had hulp gevraagd en kreeg een Dit komt denk ik do
+  Het lukte me niet om de tabs dynamisch te wisselen. 
 
+  hamburger menu gefixt en styling van header.
+
+  Ik heb geleerd hoe het ~ sibling teken werkt met selectoren.
+
+  Geprobeerd met Javascript current target alleen een kleurtje te geven maar blijkbaar had ik dat vorig jaar al gedaan. ik was vergeten dat als je :target-current gebruikt op een element dat het hetzelfde kan doen!
+
+  Plan:
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -234,24 +241,11 @@ Sources:
   ### Stand van zaken
   Stap 1: games section opmaak
   Te doen: pagina 2 breakdown, aria-labels, dark mode
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  
 
 </details>
 
