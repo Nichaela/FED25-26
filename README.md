@@ -183,7 +183,6 @@ Stiene
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-<<<<<<< HEAD
   Het lukte me niet om de tabs dynamisch te wisselen. 
 
   hamburger menu gefixt en styling van header.
@@ -192,29 +191,33 @@ Stiene
 
   Geprobeerd met Javascript current target alleen een kleurtje te geven maar blijkbaar had ik dat vorig jaar al gedaan. ik was vergeten dat als je :target-current gebruikt op een element dat het hetzelfde kan doen!
 
-  Plan:
-=======
   
->>>>>>> 9ed53ebb6b95f1727cbae882b238a5dc9c5ccf57
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
-
-  ### Verslag van meeting
+  
+  ### Verslag van meeting 25-26
   - 
 - Stiene haar grid was kapot gegaan, dit kwam door een -4 styling in de button die onder grid stond.
 - Voor font ook custom properties
 - Geen margin gebruiken, voorkeur aan padding
 
-  ### Plan 26-27
+  ### Plan uitkomst meeting 26-27
+  Birthday section confetti
+  Birthday section afmaken dmv transform gebruiken.
+  Switch section video toevoegen 
+  Switch section :before en :after
+  Camp section border-radius toevoegen.
+  Amiibo section 
+  Footer 
   
+  Surface opties:
+  - Reduce motion
+  - Scroll driven animation
+  - On load
+  - transform animation
+  - video menu met JS
+  - animation villager
+  - svg animation
+ 
+
 
 Sources: 
 - Grid template areas css tricks
