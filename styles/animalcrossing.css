@@ -174,11 +174,53 @@ header > div:nth-of-type(3) > div::before {
     margin-inline: 10px;
 }
 
+header > div:nth-of-type(3) nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 130px;
+    margin: 0 auto;
+}
+/* genAI prompt: Hoe komt het dat de border-radius niet werkt: antw: overflow:hidden zodat de ::after image contained wordt */
+header > div:nth-of-type(3) nav button{
+    width: 46px;
+    height: 46px;
+    border: none;
+    border-radius: 1em;
+    overflow: hidden;
+    position: relative;
+    background-color: #C4161C;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+}
+header > div:nth-of-type(3) nav button::after {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    background-image: url("/images/animal-crossing/birthday-arrow.svg");
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+header > div:nth-of-type(3) nav button:nth-of-type(2)::after {
+    transform: rotate(180deg);
+}
+    
+
 header > div:nth-of-type(3) > div > * {
     position: relative;
     z-index: 1;
 }
-header > div:nth-of-type(3) > div > div > div{
+
+header > div:nth-of-type(3) > div > div {
+    margin-top: 2em;
+}
+
+
+header > div:nth-of-type(3) > div > div > div {
     position: absolute;
     background-size: 337px 235px;
     width: 337px;
@@ -212,17 +254,7 @@ header > div:nth-of-type(3) img {
     max-height: 250px;
 }
 
-header > div:nth-of-type(3) > div > button:nth-of-type(1)::after {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    content: '';
-    background-image: url(/assets/img/birthday/birthday-arrow.svg);
-    background-size: 15px 15px;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
+
 
 /****************/
 /*     News	    */
@@ -334,7 +366,38 @@ content: '';
     height: calc(100% + 20px);
     position: absolute;
 }
+.foliage-cap {
+        position: relative;
+            background-image: linear-gradient(-180deg, #6ddcff 13%, #fff 100%);
+}
 
+.foliage-cap::before {
+    content: '';
+    background-image: url("/images/animal-crossing/apple-border-top_2x.png");
+    background-size: 995px 125px;
+    height: 125px;
+        padding-top: 125px;
+    padding-bottom: 0;
+        z-index: 24;
+        top: 0;
+    width: 100%;
+    height: 127px;
+    overflow: hidden;
+}
+
+.foliage-cap::after {
+    content: '';
+    width: 150%;
+    left: -25%;
+    right: 0;
+    padding-bottom: 25%;
+    position: absolute;
+    margin: 0 auto;
+    bottom: 80%;
+    background-color: #FDD119;
+    border-radius: 50%;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
+}
 
 /****************/
 /*     Camp   */
@@ -390,6 +453,19 @@ main > section:nth-of-type(3) ul li img {
 /***********************/
 /*     Play Nintendo   */
 /***********************/
+section:nth-of-type(4) {
+    position: relative;
+    background-image: url("/images/animal-crossing/play-dots.png");
+    background-color: #fdfdea;
+    background-size: 32px 32px;
+    z-index: 50;
+    padding-block: 20px 85px;
+
+    h2 {
+        font-size: 1.75rem;
+    }
+}
+
 
 section:nth-of-type(4) ul {
     display: flex;
@@ -398,13 +474,13 @@ section:nth-of-type(4) ul {
     margin-inline: 1em;
 }
 
-main > section:nth-of-type(4) li {
+section:nth-of-type(4) li {
     background-color: var(--ac-play-clr);
     width: 100%;
     display: block;
 }
 
-main > section:nth-of-type(4) li a {
+section:nth-of-type(4) li a {
     display: flex;
     border: solid 4px var(--black);
     box-shadow: 0 calc(4px * 2) 0 4px * -1 var(--black);
@@ -413,11 +489,11 @@ main > section:nth-of-type(4) li a {
     will-change: box-shadow;
 }
 
-main > section:nth-of-type(4) li:nth-child(odd) a img {
+section:nth-of-type(4) li:nth-child(odd) a img {
     order: 1;
 }
 
-main > section:nth-of-type(4) li a div {
+section:nth-of-type(4) li a div {
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -426,21 +502,21 @@ main > section:nth-of-type(4) li a div {
     color: var(--black);    
 }
 
-main > section:nth-of-type(4) li:nth-child(odd) a div {
+section:nth-of-type(4) li:nth-child(odd) a div {
     order: 2;
     text-align: right;
 }
 
-main > section:nth-of-type(4) li:nth-child(odd) a div span {
+section:nth-of-type(4) li:nth-child(odd) a div span {
     align-self: flex-end;
 }
 
-main > section:nth-of-type(4) li:nth-child(even) a div span {
+section:nth-of-type(4) li:nth-child(even) a div span {
     align-self: flex-start;
 }
 
 
-main > section:nth-of-type(4) div span {
+section:nth-of-type(4) div span {
     order: 1;
     color: var(--black); 
     font-size: 0.75rem;
@@ -453,11 +529,11 @@ main > section:nth-of-type(4) div span {
     padding: 0.25em 0.75em 0.125em;
 }
 
-main > section:nth-of-type(4) span:hover {
+section:nth-of-type(4) span:hover {
     transform: rotateX(360deg);
 }
 
-main > section:nth-of-type(4) div h3 {
+section:nth-of-type(4) div h3 {
     order: 2;
     line-height: 1.4;
     font-size: 1.125rem;
@@ -465,7 +541,7 @@ main > section:nth-of-type(4) div h3 {
     padding: 0;
 }
 
-main > section:nth-of-type(4) div p {
+section:nth-of-type(4) div p {
     order: 3;
     font-size: 0.875rem;
     padding: 0;
@@ -478,7 +554,7 @@ main > section:nth-of-type(4) div p {
 }
 
 
-main > section:nth-of-type(4) img{
+section:nth-of-type(4) img{
     width: 50%;
 }
 
