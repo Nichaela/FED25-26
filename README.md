@@ -251,7 +251,9 @@ Sources:
   Stap 1: games section opmaak
   Te doen: pagina 2 breakdown, aria-labels, dark mode
   
-
+  26-27
+  Ik heb geleerd hoe scale ook de children van het element aantast. Ik heb mijzelf hieromheen gewerkt door ::before te gebruiken.
+  
 
   ### Verslag van meeting
   
