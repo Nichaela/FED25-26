@@ -250,10 +250,19 @@ Sources:
   ### Stand van zaken
   Stap 1: games section opmaak
   Te doen: pagina 2 breakdown, aria-labels, dark mode
+
+  ~~Birthday section confetti~~
+  ~~Birthday section afmaken dmv transform gebruiken.~~
+  Switch section video toevoegen 
+  Switch section :before en :after
+  Camp section border-radius toevoegen.
+  Amiibo section 
+  ~~Nintendo play background~~
+  ~~Footer~~
   
   26-27
   Ik heb geleerd hoe scale ook de children van het element aantast. Ik heb mijzelf hieromheen gewerkt door ::before te gebruiken.
-  
+  - Het achtergrond van de gap tussen items en de h2 namen niet de background image van hun ouder over. Dat kwam doordat er background: inherit; op alles stond. Ik heb dit verwijderd en daardoor was het weer normaal. Maar daardoor ik leerde ik wel dat een kind element standaard het achtergrond overneemt van de ouder. ik dacht dat het alleen op de ouder stond.
 
   ### Verslag van meeting
   
