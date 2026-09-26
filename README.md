@@ -325,10 +325,10 @@ Sources:
   Nb. Vermeld de bronnen ook in je code.
 
   1. [bron 1](https://codepen.io/Elle-Smith-the-animator/pen/MYyEboY)
-     Code als basis gebruikt
+     Code als basis gebruikt voor reducing motion.
   2. [bron 2](https://scroll-driven-animations.style/demos/progress-bar/css/)
-     Code overgenomen
-  3. [Bron 3]([https://matthewlein.com/tools/ceaser](https://www.w3schools.com/css/css3_border_images.asp))
+     Code overgenomen voor een scroll driven progress bar.
+  3. [Bron 3](https://www.w3schools.com/css/css3_border_images.asp)
     Geleerd over border images en de volgende regel gebruikt: "border-image: url(border.png) 20% round;"
 4. [Bron 4](https://animalcrossing.nintendo.com)
 5. Evt. generative AI prompts staan vermeld boven de code zelf
