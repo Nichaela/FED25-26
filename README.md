@@ -253,16 +253,32 @@ Sources:
 
   ~~Birthday section confetti~~
   ~~Birthday section afmaken dmv transform gebruiken.~~
-  Switch section video toevoegen 
-  Switch section :before en :after
-  Camp section border-radius toevoegen.
-  Amiibo section 
+  ~~Switch section video toevoegen~~
+  ~~Switch section :before en :after~~
+  ~~Camp section border-radius toevoegen.~~
   ~~Nintendo play background~~
   ~~Footer~~
+  ~~aria-labels~~
+  ~~Validate html~~
+
+  Surface opties:
+  - ~~Reduce motion~~
+  - ~~states~~
+  - ~~Scroll driven animation~~
+  - ~~On load~~
+  - ~~transform animation~~
+  - ~~svg animation~~
+  - video menu met JS
   
   26-27
-  Ik heb geleerd hoe scale ook de children van het element aantast. Ik heb mijzelf hieromheen gewerkt door ::before te gebruiken.
+  - Ik heb geleerd hoe scale ook de children van het element aantast. Ik heb mijzelf hieromheen gewerkt door ::before te gebruiken.
   - Het achtergrond van de gap tussen items en de h2 namen niet de background image van hun ouder over. Dat kwam doordat er background: inherit; op alles stond. Ik heb dit verwijderd en daardoor was het weer normaal. Maar daardoor ik leerde ik wel dat een kind element standaard het achtergrond overneemt van de ouder. ik dacht dat het alleen op de ouder stond.
+- overflow moet op de parent
+- pseudo-elementen hebben standaard geen display
+- geleerd hoe simpele animation werkt
+- geleerd hoe je simpel on scroll kan animeren maar het werkt niet in chrome
+ <img width="390" height="481" alt="image" src="https://github.com/user-attachments/assets/853747d9-7831-437c-8e25-67f61deeb25a" />
+
 
   ### Verslag van meeting
   
