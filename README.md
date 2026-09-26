@@ -35,11 +35,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   https://www.nintendo.com/nl-nl/ & animalcrossing.nintendo.com
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  Nintendo home 
+  Nintendo home
+  
   <img src="readme-images/nintendo_home.png" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Animal crossing home pagina
+  
   <img width="326" height="714" alt="image" src="https://github.com/user-attachments/assets/42a7812f-322b-4bfa-bbf6-52334fef794a" />
 
 
