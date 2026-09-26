@@ -10,7 +10,7 @@
     <link href="styles/fonts.css" rel="stylesheet">
     <link href="styles/var.css" rel="stylesheet">
     <link href="styles/reset.css" rel="stylesheet">
-
+    <script defer src="scripts/script.js"></script>
 </head>
 
 <body>
@@ -20,7 +20,19 @@
             <img src="images/animal-crossing/nintendo-racetrack.svg" alt="Animal Crossing Logo">
             <a href="">Log in / Sign up</a>
         </nav>
-        <div><span>Reduce motion</span><button></button></div>
+        <div><button id="reduceBtn"><span>Reduce motion</span><svg class="icon" width="8" height="10" aria-hidden="true">
+                    <g fill="currentColor" fill-rule="evenodd">
+                        <path d="M5 0H8V10H5z"></path>
+                        <path d="M0 0H3V10H0z"></path>
+                    </g>
+                </svg></button>
+            <button id="enableBtn"><span>Enable motion</span><svg class="icon" width="8" height="10" aria-hidden="true">
+                    <g fill="currentColor" fill-rule="evenodd">
+                        <path d="M5 0H8V10H5z"></path>
+                        <path d="M0 0H3V10H0z"></path>
+                    </g>
+                </svg></button>
+        </div>
 
 
         <!-- hero -->
@@ -212,7 +224,7 @@
 <footer>
     <div></div>
     <div>
-        <a>Customer Support</a>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Customer Support</a>
         <img src="/images/animal-crossing/logo-amiibo.svg" alt="">
 
         <span>Follow Nintendo:</span>

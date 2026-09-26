@@ -1,86 +1,88 @@
+@media (prefers-color-scheme: dark) {
+}
+
 /******************************/
 /* 	     Slides section       */
 /******************************/
 
-main section:nth-of-type(1) ul { 
-	display:flex;
-	overflow-x:auto;
-	scroll-snap-type:x mandatory;
-	padding-inline:15%;
-	scrollbar-color: grey black;
-  	scrollbar-width: thin;
-	
-	/* @media (prefers-reduced-motion:no-preference) {
+main section:nth-of-type(1) ul {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-inline: 15%;
+  scrollbar-color: grey black;
+  scrollbar-width: thin;
+
+  /* @media (prefers-reduced-motion:no-preference) {
 		scroll-behavior:smooth;
 	} */
-	
-	anchor-name: --carousel;
+
+  anchor-name: --carousel;
 }
 
 main > section:nth-of-type(1) ul {
-	padding-block: 2em 1em;
-	background-color: var(--black);
+  padding-block: 2em 1em;
+  background-color: var(--black);
   &::scroll-button(*) {
-    position: static; 
+    position: static;
     position-anchor: --carousel;
     position-visibility: always;
     font-family: "Material Symbols Outlined";
-	width:3em;
-	aspect-ratio:1/1;
-	border-radius:50%;
-	border:none;
-	color:white;
-	background-color:dodgerblue;
+    width: 3em;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    background-color: dodgerblue;
   }
 
   &::scroll-button(right) {
     position-area: bottom;
-    content: '→' / 'Next';
-		justify-self:end;
+    content: "→" / "Next";
+    justify-self: end;
   }
 
   &::scroll-button(left) {
     position: static;
-    content: '←' / 'Previous';
-		justify-self:start;
+    content: "←" / "Previous";
+    justify-self: start;
   }
-	
-	&::scroll-button(*):disabled {
-		background-color:grey;
-	}
+
+  &::scroll-button(*):disabled {
+    background-color: grey;
+  }
 }
 
 main > section:nth-of-type(1) ul li {
-	flex-basis: 70vw;
-	flex-shrink: 0;
-	scroll-snap-align: center;
-	padding-inline: 4px;
-	border-radius: .2em;
+  flex-basis: 70vw;
+  flex-shrink: 0;
+  scroll-snap-align: center;
+  padding-inline: 4px;
+  border-radius: 0.2em;
 
-	
-	filter:blur(4px);
-	opacity:.7;
-	transition:
-    filter .3s ease,
-    transform .3s ease,
-    opacity .3s ease;
+  filter: blur(4px);
+  opacity: 0.7;
+  transition:
+    filter 0.3s ease,
+    transform 0.3s ease,
+    opacity 0.3s ease;
 }
 
 main section:nth-of-type(1) ul li.is-active {
-	filter:none;
-	opacity:1;
+  filter: none;
+  opacity: 1;
 }
 
 /* kleine fix, zodat je afbeeldingen netjes vullen */
 main section:nth-of-type(1) ul img {
-	display:block;
-	width:100%;
-	height:auto;
-	border-radius: .2em;
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.2em;
 }
 
 main > ul img {
-	display:block;
+  display: block;
 }
 
 /******************************/
@@ -88,40 +90,40 @@ main > ul img {
 /******************************/
 
 main > section:not(:first-of-type) > ul:nth-of-type(1) {
-	overflow-x: auto;
+  overflow-x: auto;
 }
 
-main > section:not(:first-of-type) > ul:nth-of-type(1){
-	display: inline-flex;
-	align-items: center;
-	background-color: var(--background-clr);
-	border-radius: 1em;
-	margin-bottom: 1em;
-	padding: .25em;
-	max-width: 100%;
-	gap: 1em;
-	/* zorgt voor target-current ? */
-	scroll-target-group: auto;
+main > section:not(:first-of-type) > ul:nth-of-type(1) {
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--background-clr);
+  border-radius: 1em;
+  margin-bottom: 1em;
+  padding: 0.25em;
+  max-width: 100%;
+  gap: 1em;
+  /* zorgt voor target-current ? */
+  scroll-target-group: auto;
 }
 
 main > section:not(:first-of-type) > ul:nth-of-type(1) a:hover {
-	text-decoration: underline;
-	cursor: pointer;
-	color: var(--white);
-	background-color: var(--primary-clr);
+  text-decoration: underline;
+  cursor: pointer;
+  color: var(--white);
+  background-color: var(--primary-clr);
 }
 
 main > section:not(:first-of-type) > ul:nth-of-type(1) a {
-	display: inline-block;
-    padding: .5em 1.3em; /* same padding on ALL links, not just active */
-    border-radius: 1em;
+  display: inline-block;
+  padding: 0.5em 1.3em; /* same padding on ALL links, not just active */
+  border-radius: 1em;
 }
 
 main > section:not(:first-of-type) > ul:nth-of-type(1) a:target-current {
-	color: var(--white);
-	background-color: var(--primary-clr);
-	
-  	cursor: default;
+  color: var(--white);
+  background-color: var(--primary-clr);
+
+  cursor: default;
 }
 
 /* main > section:not(:first-of-type) > ul:first-of-type {
@@ -133,19 +135,18 @@ main > section:not(:first-of-type) > ul:nth-of-type(1) a:target-current {
 /* 	 Updates & Games section  */
 /******************************/
 main > section:not(:first-of-type) article {
-	
-	display: block;
-	border-radius: 0.3em;
-	overflow: hidden; 
-	background: var(--background-clr);
+  display: block;
+  border-radius: 0.3em;
+  overflow: hidden;
+  background: var(--background-clr);
 }
 
 /******************************/
 /* 	     Updates section      */
 /******************************/
 
-#updatesUitgelicht > article{
-	margin-bottom: .5em;
+#updatesUitgelicht > article {
+  margin-bottom: 0.5em;
 }
 
 /* main > section:not(:first-of-type) article:not(:first-of-type)  {
@@ -158,41 +159,41 @@ main > section:nth-of-type(2) > ul:nth-of-type(2) {
 }
 
 main > section:nth-of-type(2) > ul:nth-of-type(2) h3 {
-  padding: 1em .8em;
+  padding: 1em 0.8em;
 }
 
 main > section:nth-of-type(2) > ul:nth-of-type(2) li {
-	flex-basis: 100%;
-	flex-shrink: 0;
+  flex-basis: 100%;
+  flex-shrink: 0;
 }
 
 /* updates */
 main > section:nth-of-type(2) > ul:nth-of-type(2) ul {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 0.5em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5em;
 }
 
 main > section:nth-of-type(2) > ul:nth-of-type(2) ul li {
-	display: flex;
+  display: flex;
 }
 
 button:active {
-	transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 /******************************/
 /* 	     Games section        */
 /******************************/
 main > section:nth-of-type(3) > ul:nth-of-type(1) li a {
-	white-space: nowrap;
+  white-space: nowrap;
 }
 
 main > section:nth-of-type(3) > ul:nth-of-type(2) {
-	overflow-x: auto;
-	overscroll-behavior: contain;
-	display: flex;
-	flex-basis: 100%;
+  overflow-x: auto;
+  overscroll-behavior: contain;
+  display: flex;
+  flex-basis: 100%;
 }
 
 /* main > section:nth-of-type(3) > ul:nth-of-type(2) li {
@@ -200,41 +201,35 @@ main > section:nth-of-type(3) > ul:nth-of-type(2) {
 } */
 
 main > section:nth-of-type(3) > ul:nth-of-type(2) li article {
-	min-height: 100%;
-	min-width: 12.5em;
-	margin-right: .5em;
-	scroll-snap-align: center;
+  min-height: 100%;
+  min-width: 12.5em;
+  margin-right: 0.5em;
+  scroll-snap-align: center;
 }
 
 main > section:nth-of-type(3) > ul:nth-of-type(2) li a {
-	display: flex;
-	flex-direction: column-reverse;
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 main > section:nth-of-type(3) > ul:nth-of-type(2) div {
-	padding: 0.8em;
-	border-bottom: 1px dashed var(--stylization-clr);
+  padding: 0.8em;
+  border-bottom: 1px dashed var(--stylization-clr);
 }
-
 
 main > section:nth-of-type(3) > ul:nth-of-type(2) button {
-	padding: 1em;
-	display: flex;
-	width: 100%;
-
+  padding: 1em;
+  display: flex;
+  width: 100%;
 }
 main > section:nth-of-type(3) > ul:nth-of-type(2) svg {
-	width: 1.5em;
-	height: auto;
-	justify-self: end;
+  width: 1.5em;
+  height: auto;
+  justify-self: end;
 }
-
 
 @media (width <= 600px) {
-	main section:nth-of-type(2) article > a > p {
-		display: none;
-	}
+  main section:nth-of-type(2) article > a > p {
+    display: none;
+  }
 }
-
-
-

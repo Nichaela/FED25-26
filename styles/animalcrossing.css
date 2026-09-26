@@ -1,8 +1,24 @@
-/* credits: https://animalcrossing.nintendo.com/ https://scroll-driven-animations.style/demos/progress-bar/css/ */
+/* 
+credits: https://animalcrossing.nintendo.com/ 
+https://scroll-driven-animations.style/demos/progress-bar/css/ 
+https://css-tricks.com/almanac/properties/a/animation/
+*/
 
 /* begin blok https://scroll-driven-animations.style/demos/progress-bar/css/  */
 html {
 	scroll-timeline: --page-scroll block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after, 
+  .paused {
+    animation-duration: 2s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 @keyframes grow-progress {
@@ -76,7 +92,6 @@ a:hover, button:hover {
     cursor: pointer;
 }
 
-
 /****************/
 /*     nav    	*/
 /****************/
@@ -100,30 +115,38 @@ header > nav img {
   width: 97px;
 }
 
-@media (max-width: 768px) {
-  header > nav img {
-    height: 48px;
-  }
-}
-
-/****************/
-/*   hero    	*/
-/****************/
-
 header > div:nth-of-type(1) {
     background: var(--ac-link-txt-clr);
     padding-block: .5em;
     z-index: 4;
     font-size: 0.875em;
 }
+
 header > div:nth-of-type(1) button {
     display: inline-flex;
     justify-content: center;
     align-items: center;
     position: relative;
-        gap: .6em;
+    gap: .6em;
     text-transform: uppercase;
 }
+/* https://blog.pope.tech/2025/12/08/design-accessible-animation-and-movement/#implementing */
+@media (prefers-reduced-motion: {
+
+})
+
+
+
+@media (max-width: 768px) {
+  header > nav img {
+    height: 48px;
+  }
+}
+
+
+/****************/
+/*   hero    	*/
+/****************/
 
 header > div:nth-of-type(2) {
   background-image: url("../images/animal-crossing/hero-bg.jpg");
@@ -258,9 +281,9 @@ header > div:nth-of-type(3) > div > div {
 
 header > div:nth-of-type(3) > div > div > div {
   position: absolute;
-  background-size: 21.0625em 21.0625em;
-  width: 21.0625em;
-  height: 21.0625em;
+  background-size: 337px 235px;
+  width: 337px;
+  height: 235px;
   z-index: -1;
   opacity: 1;
   left: 0;
@@ -287,7 +310,7 @@ header > div:nth-of-type(3) p:nth-of-type(2) {
 }
 
 header > div:nth-of-type(3) img {
-  max-height: 5.625em;
+  max-height: 250px;
 }
 
 /****************/
@@ -309,6 +332,17 @@ main > section:nth-of-type(1) > div:nth-of-type(1) div:nth-of-type(1) {
   background-repeat: repeat;
 }
 
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translate(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
 main > section div:nth-of-type(1) > article {
   background-color: white;
   margin: 0 1.875em 1.5em 1.875em;
@@ -318,12 +352,14 @@ main > section div:nth-of-type(1) > article {
   text-align: center;
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.3);
   font-weight: 700;
-  
-  &:hover, &:focus {
+
+  animation: appear 1s linear;
+}
+
+main > section div:nth-of-type(1) > article:hover,main > section div:nth-of-type(1) > article:focus {
     box-shadow: 0 0 0 6px #961115;
     border-radius: 12px;
     transform: scale(1.02)
-  }
 }
 
 main > section:nth-of-type(1) div:nth-of-type(1) > article time {
@@ -536,7 +572,7 @@ section:nth-of-type(3) li, section:nth-of-type(3) span {
     transition: transform 0.6s ease;
 }
 
-section:nth-of-type(3) li:hover {
+section:nth-of-type(3) li:hover, section:nth-of-type(3) li:focus {
     transform: translateY(-.5em);
     border: solid .4em var(--ac-hover);
     background-color: var(--primary-clr);
@@ -671,10 +707,10 @@ footer > div > a:first-of-type {
   border-radius: 0.9375em;
   box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.3);
   margin: 0 auto;
-  &:hover, &:focus {
-    background-color: var(--ac-footer-btn-hover);
-    border: solid .3em var(--ac-hover);
-    box-shadow:none;
+    &:hover, &:focus {
+        background-color: var(--ac-footer-btn-hover);
+        border: solid .3em var(--ac-hover);
+        box-shadow:none;
 
   }
 }

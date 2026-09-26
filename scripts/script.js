@@ -1,49 +1,65 @@
+// credits: https://blog.pope.tech/2025/12/08/design-accessible-animation-and-movement/#implementing
 
 // hamburger menu
-const hamburgerButton = document.querySelector("header nav button");
+const hamburgerBtn = document.querySelector("header nav button");
 const headerNav = document.querySelector("header nav");
 
-// hero carousel
-const carousel = document.querySelector('main section:nth-of-type(1) ul.hero-carousel');
-const slides = Array.from(carousel.children);
+//reduce motion
+const reduceBtn = document.getElementById('reduceBtn');
+const enableBtn = document.getElementById('enableBtn');
 
-hamburgerButton.onclick = toggleMenu;
+var prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+hamburgerBtn?.addEventListener('click', toggleMenu);
 
 // hamburger menu
 function toggleMenu() {
-  hamburgerButton.classList.toggle("is-open")
+  hamburgerBtn.classList.toggle("is-open")
 }
 
-// volgende blok is van Sanne 't Hooft uitleg
 
-// zorgt er voor dat de zijkanten blurry zijn
-function updateActiveSlide() {
-  const carouselRect = carousel.getBoundingClientRect();
-  const centerX = carouselRect.left + carouselRect.width / 2;
 
-  let closestSlide = null;
-  let closestDistance = Infinity;
+/****************************/
+/*  tutorial reduce motion  */
+/****************************/
 
-  slides.forEach(slide => {
-    const rect = slide.getBoundingClientRect();
-    const slideCenter = rect.left + rect.width / 2;
-    const distance = Math.abs(slideCenter - centerX);
 
-    if (distance < closestDistance) {
-      closestDistance = distance;
-      closestSlide = slide;
-    }
-  });
 
-  slides.forEach(slide => {
-    slide.classList.toggle('is-active', slide === closestSlide);
-  });
+function updateControlState() {
+  if (prefersReducedMotion.matches) {
+    // Reduced-motion users already get animation disabled in CSS
+    showButton(true);
+  } else {
+    showButton(false);
+  }
 }
 
-carousel.addEventListener('scroll', () => {
-  window.requestAnimationFrame(updateActiveSlide);
+updateControlState();
+
+function showButton(bool) {
+  if (bool === true) {
+    document.body.classList.add("paused");
+    reduceBtn.classList.add("visually-hidden");
+    enableBtn.classList.remove("visually-hidden");
+  }
+  else if (bool === false) {
+    document.body.classList.remove("paused");
+    reduceBtn.classList.remove("visually-hidden");
+    enableBtn.classList.add("visually-hidden");
+  }
+}
+
+reduceBtn.addEventListener("click", function () {
+  showButton(true);
 });
 
-window.addEventListener('load', updateActiveSlide);
-window.addEventListener('resize', updateActiveSlide);
-// eind blok Sanne 't Hooft
+enableBtn.addEventListener("click", function () {
+  showButton(false);
+});
+
+prefersReducedMotion.addEventListener("change", () => {
+  updateControlState();
+
+});
+
+
