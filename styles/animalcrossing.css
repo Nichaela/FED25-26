@@ -1,4 +1,6 @@
-/* credits: https://scroll-driven-animations.style/demos/progress-bar/css/ */
+/* credits: https://animalcrossing.nintendo.com/ https://scroll-driven-animations.style/demos/progress-bar/css/ */
+
+/* begin blok https://scroll-driven-animations.style/demos/progress-bar/css/  */
 html {
 	scroll-timeline: --page-scroll block;
 }
@@ -19,6 +21,8 @@ html {
 	animation-timeline: --page-scroll;
     z-index: 5;
 }
+
+/* eind blok https://scroll-driven-animations.style/demos/progress-bar/css/ */
 
 body {
   font-family: "Arvo", serif;
@@ -43,7 +47,7 @@ span {
 }
 
 h2 {
-  margin-bottom: 24px;
+  margin-bottom: 1.5em;
   font-size: 1.375rem;
   display: block;
   font-weight: 700;
@@ -68,7 +72,7 @@ main > section div > a {
   }
 }
 
-a:hover {
+a:hover, button:hover {
     cursor: pointer;
 }
 
@@ -107,15 +111,18 @@ header > nav img {
 /****************/
 
 header > div:nth-of-type(1) {
-  background: var(--ac-link-txt-clr);
-  padding: 4px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  z-index: 70;
-  text-transform: uppercase;
-  font-size: 0.875em;
+    background: var(--ac-link-txt-clr);
+    padding-block: .5em;
+    z-index: 4;
+    font-size: 0.875em;
+}
+header > div:nth-of-type(1) button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+        gap: .6em;
+    text-transform: uppercase;
 }
 
 header > div:nth-of-type(2) {
@@ -161,11 +168,11 @@ header > div:nth-of-type(2) > div {
   background-image: url("../images/animal-crossing/sign_2x.png");
   background-size: 115% 100%;
   background-position: 50% 50%;
-  padding: 10px 25px 60px 25px;
+  padding: 0.625em 1.5625em 3.75em 1.5625em;
   line-height: 1.5em;
   color: #fff;
   width: 100%;
-  max-width: 300px;
+  max-width: 18.75em;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
   margin: 0 auto;
   margin-top: -5em;
@@ -251,9 +258,9 @@ header > div:nth-of-type(3) > div > div {
 
 header > div:nth-of-type(3) > div > div > div {
   position: absolute;
-  background-size: 337px 235px;
-  width: 337px;
-  height: 235px;
+  background-size: 21.0625em 21.0625em;
+  width: 21.0625em;
+  height: 21.0625em;
   z-index: -1;
   opacity: 1;
   left: 0;
@@ -280,7 +287,7 @@ header > div:nth-of-type(3) p:nth-of-type(2) {
 }
 
 header > div:nth-of-type(3) img {
-  max-height: 250px;
+  max-height: 5.625em;
 }
 
 /****************/
@@ -305,7 +312,7 @@ main > section:nth-of-type(1) > div:nth-of-type(1) div:nth-of-type(1) {
 main > section div:nth-of-type(1) > article {
   background-color: white;
   margin: 0 1.875em 1.5em 1.875em;
-  padding: 24px 12px 15px 12px;
+  padding: 1.5em 0.75em 0.9375em 0.75em;
   border-radius: 0.5em;
   display: flex;
   text-align: center;
@@ -339,7 +346,7 @@ main > section:nth-of-type(1) div:nth-of-type(1) > article > a {
 main > section:nth-of-type(1) div:nth-of-type(1) > article a h3 {
   font-size: 1.1rem;
   line-height: 1.4;
-  margin-bottom: 20px;
+  margin-bottom: 1.25em;
 }
 
 main > section:nth-of-type(1) div:nth-of-type(1) > article a span {
@@ -407,7 +414,7 @@ main > section:nth-of-type(1) a:nth-of-type(2) {
     100% 0,
     0 100%,
     100% 100%;
-  background-size: 53px 53px;
+  background-size: 3.3125em 3.3125em;
   background-repeat: no-repeat;
   top: 0;
   bottom: 0;
@@ -433,9 +440,9 @@ video {
 .foliage-cap::before {
   content: "";
   background-image: url("/images/animal-crossing/apple-border-top_2x.png");
-  background-size: 995px 125px;
-  height: 125px;
-  padding-top: 125px;
+  background-size: 995px 7.8125em;
+  height: 7.8125em;
+  padding-top: 7.8125em;
   padding-bottom: 0;
   z-index: 24;
   top: 0;
@@ -491,7 +498,7 @@ main > section:nth-of-type(2) img {
 }
 
 main > section:nth-of-type(2) img:nth-of-type(1) {
-  margin-bottom: -42px;
+  margin-bottom: -2.625em;
 }
 
 main > section:nth-of-type(2) p {
@@ -517,8 +524,8 @@ section:nth-of-type(3) {
   position: relative;
   background-image: url("/images/animal-crossing/play-dots.png");
   background-color: var(--ac-play-bg-clr);
-  background-size: 32px 32px;
-  padding-block: 20px 85px;
+  background-size:2em 2em;
+  padding-block: 1.25em 5.3125em;
 
   h2 {
     font-size: 1.75rem;
@@ -634,13 +641,13 @@ section:nth-of-type(3) img {
 
 footer {
   background: url("/images/animal-crossing/footer-dots.png") #f7aa18;
-  background-size: 48px 48px;
-  padding: 170px 0 20px;
+  background-size: 3em 3em;
+  padding: 10.625em 0 1.25em;
   position: relative;
   z-index: 5;
 
   > div > img {
-    margin-top: 46px;
+    margin-top: 2.875em;
     height: 6em;
   }
 
@@ -659,9 +666,9 @@ footer > div > a:first-of-type {
   background-color: var(--ac-footer-btn-clr);
   color: var(--ac-secondary-txt-clr);
   font-size: 1rem;
-  padding: 15px 45px;
+  padding: 0.9375em 2.8125em;
   font-weight: 700;
-  border-radius: 15px;
+  border-radius: 0.9375em;
   box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.3);
   margin: 0 auto;
   &:hover, &:focus {
@@ -691,7 +698,7 @@ footer > div:nth-of-type(1)::after {
   background-size: 17px auto;
   content: "";
   display: block;
-  height: 20px;
+  height: 1.25em;
   position: relative;
 }
 
