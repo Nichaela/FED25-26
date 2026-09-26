@@ -70,7 +70,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Breakdownschets (week 1)
 
-<details open>
+<details>
   <summary> Breakdown uitwerking </summary>
   
    ### Aantekeningen: 
@@ -244,7 +244,7 @@ Sources:
 
 ## Voortgang 3 (week 4)
 
-<details>
+<details open>
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
@@ -278,16 +278,16 @@ Sources:
 - geleerd hoe simpele animation werkt
 - geleerd hoe je simpel on scroll kan animeren maar het werkt niet in chrome
  <img width="390" height="481" alt="image" src="https://github.com/user-attachments/assets/853747d9-7831-437c-8e25-67f61deeb25a" />
+<img width="671" height="35" alt="image" src="https://github.com/user-attachments/assets/9b1e7863-e59f-491a-9dec-cdb2e9ab06d2" />
 
 
   ### Verslag van meeting
-  
+  overscroll-behavior-x: contain;  voorkomt terug optie scroll ding 
 
 </details>
 
 
-<!-- overscroll-behavior-x: contain;  voorkomt terug optie scroll ding 
-pointer-events: none; even opzoeken-->
+
 
 
 ## Eindgesprek (week 5)
@@ -324,8 +324,13 @@ pointer-events: none; even opzoeken-->
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. [...](https://matthewlein.com/tools/ceaser)
+  1. [bron 1](https://codepen.io/Elle-Smith-the-animator/pen/MYyEboY)
+     Code als basis gebruikt
+  2. [bron 2](https://scroll-driven-animations.style/demos/progress-bar/css/)
+     Code overgenomen
+  3. [Bron 3]([https://matthewlein.com/tools/ceaser](https://www.w3schools.com/css/css3_border_images.asp))
+    Geleerd over border images en de volgende regel gebruikt: "border-image: url(border.png) 20% round;"
+4. [Bron 4](https://animalcrossing.nintendo.com)
+5. Evt. generative AI prompts staan vermeld boven de code zelf
 
 </details>
