@@ -23,7 +23,9 @@
 	--ac-camp-heading-clr: #004d0f;
 	--ac-camp-text-clr: #464646;
 	--ac-play-bg-clr: #fdfdea;
-	--ac-footer-btn-clr: #FDD10A; 
+	--ac-footer-btn-clr: #FDD10A;
+	--ac-footer-btn-hover: #FFE46A; 
+	--ac-hover:#961115;
 		/* #ac000d */
 }
 

@@ -1,320 +1,355 @@
+/* credits: https://scroll-driven-animations.style/demos/progress-bar/css/ */
+html {
+	scroll-timeline: --page-scroll block;
+}
+
+@keyframes grow-progress {
+	from { transform: scaleX(0); }
+	to { transform: scaleX(1); }
+}
+
+#progress {
+	position: fixed;
+	left: 0; top: 0;
+	width: 100%; height: 1em;
+	background: var(--ac-news-date-clr);
+
+	transform-origin: 0 50%;
+	animation: grow-progress auto linear;
+	animation-timeline: --page-scroll;
+    z-index: 5;
+}
+
 body {
-    font-family: 'Arvo', serif;
-    font-size: 1em;
-    line-height: 1.75;
-    color: var(--ac-secondary-txt-clr);
-    text-align: center;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+  font-family: "Arvo", serif;
+  font-size: 1em;
+  line-height: 1.75;
+  color: var(--ac-secondary-txt-clr);
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3 {
-    font-family: 'Arvo', serif;
-    line-height: 1.5;
+h1,
+h2,
+h3 {
+  font-family: "Arvo", serif;
+  line-height: 1.5;
 }
 
-h2, span  {
-    color: var(--ac-secondary-txt-clr);
+h2,
+span {
+  color: var(--ac-secondary-txt-clr);
 }
 
 h2 {
-    margin-bottom: 24px;
-    font-size: 1.375rem;
-    display: block;
-    font-weight: 700;
+  margin-bottom: 24px;
+  font-size: 1.375rem;
+  display: block;
+  font-weight: 700;
 }
 
-/* buttons */
+/* red links */
 main > section div > a {
-    display: inline-block;
-    color: var(--ac-link-txt-clr);
-    background-color: var(--ac-link-clr);
-    padding-block: 7px 8px;
-    font-size: 1.115rem;
-    font-weight: 700;
-    padding: 0.938em 2.813em;
-    border-radius: 0.938em;
-    margin-top: 1em;
-    position: relative;
-    z-index: 2;
+  display: inline-block;
+  color: var(--ac-link-txt-clr);
+  background-color: var(--ac-link-clr);
+  font-size: 1.115rem;
+  font-weight: 700;
+  padding: 0.938em 2.813em;
+  border-radius: 0.938em;
+  margin-top: 1em;
+  position: relative;
+  z-index: 2;
+
+  &:hover, &:focus, &:active {
+    background-color: var(--ac-hover);
+    border: solid .3em var(--ac-camp-heading-clr);
+  }
 }
+
+a:hover {
+    cursor: pointer;
+}
+
 
 /****************/
 /*     nav    	*/
 /****************/
 
 header a {
-    color: var(--white);
-    
+  color: var(--white);
 }
 
 header > nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid #ac000d;
-    height: 3.75em;
-    background-color: var(--primary-clr);
-    padding-inline: 1.875em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ac000d;
+  height: 3.75em;
+  background-color: var(--primary-clr);
+  padding-inline: 1.875em;
 }
 
 header > nav img {
-    display: block;
-    width: 97px;
+  display: block;
+  width: 97px;
 }
 
 @media (max-width: 768px) {
-    header > nav img {
-        height: 48px;
-    }
-    
+  header > nav img {
+    height: 48px;
+  }
 }
 
 /****************/
 /*   hero    	*/
 /****************/
 
-
-
 header > div:nth-of-type(1) {
-    background: var(--ac-link-txt-clr);
-    padding: 4px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    z-index: 70;
-    text-transform:uppercase;
-    font-size: 0.875em;
+  background: var(--ac-link-txt-clr);
+  padding: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 70;
+  text-transform: uppercase;
+  font-size: 0.875em;
 }
 
 header > div:nth-of-type(2) {
-    background-image: url('../images/animal-crossing/hero-bg.jpg');
-    background-size: cover;
-    background-position: center;
-    margin: 0 auto;
-    padding: 1.56em 0;
-    text-align: center;
-    height: auto;
-    background-size: cover;
-    background-position: 50% 50%;
-    overflow: hidden;
-    position: relative;
+  background-image: url("../images/animal-crossing/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  padding: 1.56em 0;
+  text-align: center;
+  height: auto;
+  background-size: cover;
+  background-position: 50% 50%;
+  overflow: hidden;
+  position: relative;
 }
 
 header > div:nth-of-type(2) p {
-    padding: 1em 0;
+  padding: 1em 0;
 }
 
 header > div:nth-of-type(2) span {
-    line-height: 1.4;
-    white-space: nowrap;
-    text-align: center;
-    width: 100%;
-    font-size: 1.25em;
-    font-weight: 700;
+  line-height: 1.4;
+  white-space: nowrap;
+  text-align: center;
+  width: 100%;
+  font-size: 1.25em;
+  font-weight: 700;
 }
 
 header > div:nth-of-type(2) > img:nth-of-type(1) {
-    max-width: 52%;
-    display: block;
-    margin: .625em auto 0;
+  max-width: 52%;
+  display: block;
+  margin: 0.625em auto 0;
 }
 
 header > div:nth-of-type(2) > img:nth-of-type(2) {
-    max-width: 175px;
-    position: relative;
-    z-index: 1;
-
+  max-width: 175px;
+  position: relative;
+  z-index: 1;
 }
 
 header > div:nth-of-type(2) > div {
-    background-image: url('../images/animal-crossing/sign_2x.png');
-    background-size: 115% 100%;
-    background-position: 50% 50%;
-    padding: 10px 25px 60px 25px;
-    line-height: 1.5em;
-    color: #fff;
-    width: 100%;
-    max-width: 300px;
-    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
-    margin: 0 auto;
-    margin-top: -5em;
-    position: relative;
-    z-index: 2;
+  background-image: url("../images/animal-crossing/sign_2x.png");
+  background-size: 115% 100%;
+  background-position: 50% 50%;
+  padding: 10px 25px 60px 25px;
+  line-height: 1.5em;
+  color: #fff;
+  width: 100%;
+  max-width: 300px;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  margin-top: -5em;
+  position: relative;
+  z-index: 2;
 }
-
 
 /****************/
 /*   Birthday   */
 /****************/
 
 header > div:nth-of-type(3) {
-   background-image: url(/images/animal-crossing/birthday-red_2x.jpg);
-     /* -webkit-transform: translateY(-50%); 
+  background-image: url(/images/animal-crossing/birthday-red_2x.jpg);
+  /* -webkit-transform: translateY(-50%); 
      transform: translateY(-50%); 
      background-position: center top;  */
-    background-size: 1em;
-    width: 100%;
+  background-size: 1em;
+  width: 100%;
 }
 
 header > div:nth-of-type(3) > div {
-    position: relative;
-    width: 100%;
+  position: relative;
+  width: 100%;
 }
 
 /* genAI prompt: how come the children of a scaled div also scale? */
 header > div:nth-of-type(3) > div::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image: url("/images/animal-crossing/birthday-ribbon.svg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    transform: scaleY(1.1);
-    transform-origin: center;
-    z-index: 0;
-    margin-inline: 10px;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("/images/animal-crossing/birthday-ribbon.svg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  transform: scaleY(1.1);
+  transform-origin: center;
+  z-index: 0;
+  margin-inline: 10px;
 }
 
 header > div:nth-of-type(3) nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 130px;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 130px;
+  margin: 0 auto;
 }
 /* genAI prompt: Hoe komt het dat de border-radius niet werkt: antw: overflow:hidden zodat de ::after image contained wordt */
-header > div:nth-of-type(3) nav button{
-    width: 46px;
-    height: 46px;
-    border: none;
-    border-radius: 1em;
-    overflow: hidden;
-    position: relative;
-    background-color: #C4161C;
-    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+header > div:nth-of-type(3) nav button {
+  width: 46px;
+  height: 46px;
+  border: none;
+  border-radius: 1em;
+  overflow: hidden;
+  position: relative;
+  background-color: #c4161c;
+  box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
 }
 header > div:nth-of-type(3) nav button::after {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    content: '';
-    background-image: url("/images/animal-crossing/birthday-arrow.svg");
-    background-size: 15px 15px;
-    background-repeat: no-repeat;
-    background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background-image: url("/images/animal-crossing/birthday-arrow.svg");
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 header > div:nth-of-type(3) nav button:nth-of-type(2)::after {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
-    
 
 header > div:nth-of-type(3) > div > * {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
 header > div:nth-of-type(3) > div > div {
-    margin-top: 2em;
+  margin-top: 2em;
 }
 
-
 header > div:nth-of-type(3) > div > div > div {
-    position: absolute;
-    background-size: 337px 235px;
-    width: 337px;
-    height: 235px;
-    z-index: -1;
-    opacity: 1;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    display: block;
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    background-image: url("/images/animal-crossing/confetti_2x.png");
-} 
+  position: absolute;
+  background-size: 337px 235px;
+  width: 337px;
+  height: 235px;
+  z-index: -1;
+  opacity: 1;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  display: block;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  background-image: url("/images/animal-crossing/confetti_2x.png");
+}
 
 header > div:nth-of-type(3) p:nth-of-type(1) {
-    color: var(--ac-link-txt-clr);
-    font-weight: 700;
-    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  color: var(--ac-link-txt-clr);
+  font-weight: 700;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
 }
 
 header > div:nth-of-type(3) p:nth-of-type(2) {
-    font-size: 1.375em;
-    color: var(--white);
-    font-weight: 700;
-    line-height: 1.35;
-    margin-bottom: 5px;
+  font-size: 1.375em;
+  color: var(--white);
+  font-weight: 700;
+  line-height: 1.35;
+  margin-bottom: 5px;
 }
 
 header > div:nth-of-type(3) img {
-    max-height: 250px;
+  max-height: 250px;
 }
-
-
 
 /****************/
 /*     News	    */
 /****************/
 
 main > section:nth-of-type(1) {
-    background-image: linear-gradient(-180deg, #fbbb37 0%, #fdd119 100%);
-    padding-top: 80px;
-    overflow: hidden;
+  background-image: linear-gradient(-180deg, #fbbb37 0%, #fdd119 100%);
+  padding-top: 80px;
+  overflow: hidden;
 }
 
-main > section div:nth-of-type(1) div {
-    background-image: url('../images/animal-crossing/triangles-yellow.png');
-    background-repeat: repeat;
-} 
+main > section:nth-of-type(1) > div:nth-of-type(1) {
+  margin-bottom: 60px;
+}
 
+main > section:nth-of-type(1) > div:nth-of-type(1) div:nth-of-type(1) {
+  background-image: url("../images/animal-crossing/triangles-yellow.png");
+  background-repeat: repeat;
+}
 
 main > section div:nth-of-type(1) > article {
-    background-color: white;
-    margin: 0 1.875em 1.5em 1.875em;
-    padding: 24px 12px 15px 12px;
-    border-radius: .5em;
-    display: flex;
-    text-align: center;
-    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.3);
-    font-weight: 700;
+  background-color: white;
+  margin: 0 1.875em 1.5em 1.875em;
+  padding: 24px 12px 15px 12px;
+  border-radius: 0.5em;
+  display: flex;
+  text-align: center;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.3);
+  font-weight: 700;
+  
+  &:hover, &:focus {
+    box-shadow: 0 0 0 6px #961115;
+    border-radius: 12px;
+    transform: scale(1.02)
+  }
 }
 
-main > section div:nth-of-type(1) > article time {
-    color: var(--ac-news-date-clr);
-    display: block;
-    font-size: .9rem;
-    padding: 0 10px .75em;
+main > section:nth-of-type(1) div:nth-of-type(1) > article time {
+  color: var(--ac-news-date-clr);
+  display: block;
+  font-size: 0.9rem;
+  padding: 0 10px 0.75em;
 }
 
-main > section div:nth-of-type(1) > article a h3 {
-    font-size: 1.1rem;
-    line-height: 1.4;
-    margin-bottom: 20px;
-}
-
-main > section div:nth-of-type(1) > article a span {
-    color: var(--ac-link-clr);
-    padding-top: .75em;
-}
-
-main > section div:nth-of-type(1) > article img {
-    border-radius: .75em;
-    width: 100%;
-}
-
-main > section div:nth-of-type(1) > article > a {
+main > section:nth-of-type(1) div:nth-of-type(1) > article > a {
   display: flex;
   flex-direction: column;
   width: 100%;
   text-decoration: none;
   color: inherit;
+
+  
+}
+
+main > section:nth-of-type(1) div:nth-of-type(1) > article a h3 {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+main > section:nth-of-type(1) div:nth-of-type(1) > article a span {
+  color: var(--ac-link-clr);
+  padding-top: 0.75em;
+}
+
+main > section:nth-of-type(1) div:nth-of-type(1) > article img {
+  border-radius: 0.75em;
+  width: 100%;
 }
 
 /* section:nth-of-type(1) > article a {
@@ -326,20 +361,19 @@ main > section div:nth-of-type(1) > article > a {
 /*     Video    */
 /****************/
 
-
 main > section:nth-of-type(1) div:nth-of-type(2) {
-    margin: 0 1.25em;
+  margin: 0 1.25em;
 }
 
 main > section:nth-of-type(1) div:nth-of-type(2) h3 a {
-    color: var(--ac-secondary-txt-clr);
-    font-weight: 700;
-    display: block;
-    clear: both;
-    width: 100%;
-    margin: 15px 0;
-    font-size: 1.125em;
-    text-decoration: none;
+  color: var(--ac-secondary-txt-clr);
+  font-weight: 700;
+  display: block;
+  clear: both;
+  width: 100%;
+  margin: 15px 0;
+  font-size: 1.125em;
+  text-decoration: none;
 }
 
 /* main > section:nth-of-type(1) div { 
@@ -353,60 +387,75 @@ content: '';
 } */
 
 main > section:nth-of-type(1) a:nth-of-type(2) {
-    z-index: 5;
+  z-index: 5;
+}
+
+.fancy-border {
+  position: relative;
 }
 
 /* Copy paste van de website zelf */
-.fancy-border:after{
-    background-image: url('../images/animal-crossing/corner-left-top_2x.png'), 
-    url('../images/animal-crossing/corner-right-top_2x.png'), 
-    url('../images/animal-crossing/corner-left-bottom_2x.png'), 
-    url('../images/animal-crossing/corner-left-right_2x.png');
-    background-position: 0 0, 100% 0, 0 100%, 100% 100%;
-    background-size: 53px 53px;
-    background-repeat: no-repeat;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: -10px;
-    margin: auto;
-    width: calc(100% + 20px);
-    height: calc(100% + 20px);
-    position: absolute;
+.fancy-border::after {
+  content: "";
+  background-image:
+    url("../images/animal-crossing/corner-left-top_2x.png"),
+    url("../images/animal-crossing/corner-right-top_2x.png"),
+    url("../images/animal-crossing/corner-left-bottom_2x.png"),
+    url("../images/animal-crossing/corner-right-bottom_2x.png");
+  background-position:
+    0 0,
+    100% 0,
+    0 100%,
+    100% 100%;
+  background-size: 53px 53px;
+  background-repeat: no-repeat;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: -10px;
+  margin: auto;
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  position: absolute;
+}
+
+video {
+  width: 100%;
+  height: 100%;
 }
 
 .foliage-cap {
-        position: relative;
-            background-image: linear-gradient(-180deg, #6ddcff 13%, #fff 100%);
-            height: 10em;
+  position: relative;
+  background-image: linear-gradient(-180deg, #6ddcff 13%, #fff 100%);
+  height: 10em;
 }
 
 .foliage-cap::before {
-    content: '';
-    background-image: url("/images/animal-crossing/apple-border-top_2x.png");
-    background-size: 995px 125px;
-    height: 125px;
-    padding-top: 125px;
-    padding-bottom: 0;
-    z-index: 24;
-    top: 0;
-    width: 100%;
-    height: 127px;
-    display: inline-block;
+  content: "";
+  background-image: url("/images/animal-crossing/apple-border-top_2x.png");
+  background-size: 995px 125px;
+  height: 125px;
+  padding-top: 125px;
+  padding-bottom: 0;
+  z-index: 24;
+  top: 0;
+  width: 100%;
+  height: 127px;
+  display: inline-block;
 }
 
 .foliage-cap::after {
-    content: '';
-    width: 150%;
-    left: -25%;
-    right: 0;
-    padding-bottom: 25%;
-    position: absolute;
-    margin: 0 auto;
-    bottom: 80%;
-    background-color: #FDD119;
-    border-radius: 50%;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
+  content: "";
+  width: 150%;
+  left: -25%;
+  right: 0;
+  padding-bottom: 25%;
+  position: absolute;
+  margin: 0 auto;
+  bottom: 80%;
+  background-color: #fdd119;
+  border-radius: 50%;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.4);
 }
 
 /****************/
@@ -414,41 +463,41 @@ main > section:nth-of-type(1) a:nth-of-type(2) {
 /****************/
 
 main > section:nth-of-type(2) {
-    padding: 2.25em 0.75em;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    content: "";
-    background-image: url(../images/animal-crossing/pattern-stripes.jpg);
-    background-size: 20px 20px;
-    -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  padding: 2.25em 0.75em;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  content: "";
+  background-image: url(../images/animal-crossing/pattern-stripes.jpg);
+  background-size: 20px 20px;
+  -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 main > section:nth-of-type(2) > div {
-    background-image: url(../images/animal-crossing/pattern-trees.jpg);
-    background-size: 150px 100px;
-    padding: 1.75em 1.125em;
+  background-image: url(../images/animal-crossing/pattern-trees.jpg);
+  background-size: 150px 100px;
+  padding: 1.75em 1.125em;
 }
 
 main > section:nth-of-type(2) h2 {
-    font-size: 1.5rem;
-    color: var(--ac-camp-heading-clr);
+  font-size: 1.5rem;
+  color: var(--ac-camp-heading-clr);
 }
 
 main > section:nth-of-type(2) img {
-        max-width: 100%;
+  max-width: 100%;
 }
 
 main > section:nth-of-type(2) img:nth-of-type(1) {
-    margin-bottom: -42px;
+  margin-bottom: -42px;
 }
 
 main > section:nth-of-type(2) p {
-    margin-top: 1rem;
-    color: var(--ac-camp-text-clr);
-    line-height: 1.5;
+  margin-top: 1rem;
+  color: var(--ac-camp-text-clr);
+  line-height: 1.5;
 }
 
 /****************/
@@ -465,224 +514,214 @@ main > section:nth-of-type(2) p {
 /***********************/
 
 section:nth-of-type(3) {
-    position: relative;
-    background-image: url("/images/animal-crossing/play-dots.png");
-    background-color: var(--ac-play-bg-clr);
-    background-size: 32px 32px;
-    z-index: 50;
-    padding-block: 20px 85px;
+  position: relative;
+  background-image: url("/images/animal-crossing/play-dots.png");
+  background-color: var(--ac-play-bg-clr);
+  background-size: 32px 32px;
+  padding-block: 20px 85px;
 
-    h2 {
-        font-size: 1.75rem;
+  h2 {
+    font-size: 1.75rem;
+  }
+}
+
+section:nth-of-type(3) li, section:nth-of-type(3) span {
+    transition: transform 0.6s ease;
+}
+
+section:nth-of-type(3) li:hover {
+    transform: translateY(-.5em);
+    border: solid .4em var(--ac-hover);
+    background-color: var(--primary-clr);
+    div {
+        color: var(--white);
     }
 }
 
+section:nth-of-type(3) a:hover span  {
+  transform: rotateX(360deg);
+}
+
 section:nth-of-type(3) ul {
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    margin-inline: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-inline: 1em;
 }
 
 section:nth-of-type(3) li {
-    background-color: var(--ac-play-clr);
-    width: 100%;
-    display: block;
+  background-color: var(--ac-play-clr);
+  width: 100%;
+  display: block;
+  border: solid 4px var(--black);
 }
 
 section:nth-of-type(3) li a {
-    display: flex;
-    border: solid 4px var(--black);
-    box-shadow: 0 calc(4px * 2) 0 4px * -1 var(--black);
-    transition: box-shadow 0.1s ease-in;
-    transition-property: transform, box-shadow;
-    will-change: box-shadow;
-    
+  display: flex;
+  
+  box-shadow: 0 calc(4px * 2) 0 4px * -1 var(--black);
+  transition: box-shadow 0.1s ease-in;
+  transition-property: transform, box-shadow;
+  will-change: box-shadow;
 }
 
 section:nth-of-type(3) li:nth-child(odd) a img {
-    order: 1;
+  order: 1;
 }
 
 section:nth-of-type(3) li a div {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    margin-inline: 1em;
-    padding-block: 1em;
-    color: var(--black);    
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-inline: 1em;
+  padding-block: 1em;
+  color: var(--black);
 }
 
 section:nth-of-type(3) li:nth-child(odd) a div {
-    order: 2;
-    text-align: right;
+  order: 2;
+  text-align: right;
 }
 
 section:nth-of-type(3) li:nth-child(odd) a div span {
-    align-self: flex-end;
+  align-self: flex-end;
 }
 
 section:nth-of-type(3) li:nth-child(even) a div span {
-    align-self: flex-start;
+  align-self: flex-start;
 }
-
 
 section:nth-of-type(3) div span {
-    order: 1;
-    color: var(--black); 
-    font-size: 0.75rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    display: inline-block;
-    border-radius: 2em;
-    background-color: var(--ac-play-accent-clr);
-    margin: 0em;
-    padding: 0.25em 0.75em 0.125em;
-}
-
-section:nth-of-type(3) span:hover {
-    transform: rotateX(360deg);
+  order: 1;
+  color: var(--black);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline-block;
+  border-radius: 2em;
+  background-color: var(--ac-play-accent-clr);
+  margin: 0em;
+  padding: 0.25em 0.75em 0.125em;
 }
 
 section:nth-of-type(3) div h3 {
-    order: 2;
-    line-height: 1.4;
-    font-size: 1.125rem;
-    font-weight: 700;
-    padding: 0;
+  order: 2;
+  line-height: 1.4;
+  font-size: 1.125rem;
+  font-weight: 700;
+  padding: 0;
 }
 
 section:nth-of-type(3) div p {
-    order: 3;
-    font-size: 0.875rem;
-    padding: 0;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;  
-    -webkit-line-clamp: 3; 
-    /* genAI prompt: What does "Also define the standard property 'line-clamp' for compatibility mean": antwoord: in safari en firefox heb je de extra line nodig  */
-    line-clamp: 3;
-    overflow: hidden; 
+  order: 3;
+  font-size: 0.875rem;
+  padding: 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  /* genAI prompt: What does "Also define the standard property 'line-clamp' for compatibility mean": antwoord: in safari en firefox heb je de extra line nodig  */
+  line-clamp: 3;
+  overflow: hidden;
 }
 
-
-section:nth-of-type(3) img{
-    width: 50%;
+section:nth-of-type(3) img {
+  width: 50%;
 }
-
 
 /****************/
 /*     Footer   */
 /****************/
 
 footer {
-    background: url("/images/animal-crossing/footer-dots.png") #f7aa18;
-    background-size: 48px 48px;
-    padding: 170px 0 20px;
-    position: relative;
-    z-index: 51;
+  background: url("/images/animal-crossing/footer-dots.png") #f7aa18;
+  background-size: 48px 48px;
+  padding: 170px 0 20px;
+  position: relative;
+  z-index: 5;
 
-    > div > img {
-        margin-top: 46px;
-        height: 6em;
-    }
-    
-    a img {
-        height: 3em;
-    }
+  > div > img {
+    margin-top: 46px;
+    height: 6em;
+  }
 
-    span {
-        margin-top: 2em;
-        font-size: .9em;
-        font-weight: 700;
-    }
+  a img {
+    height: 3em;
+  }
+
+  span {
+    margin-top: 2em;
+    font-size: 0.9em;
+    font-weight: 700;
+  }
 }
 
 footer > div > a:first-of-type {
-    background-color: var(--ac-footer-btn-clr);
-    color: var(--ac-secondary-txt-clr);
-    font-size: 1rem;
-    padding: 15px 45px;
-    font-weight: 700;
-    border-radius: 15px;
-    box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.3);
-    margin: 0 auto;
+  background-color: var(--ac-footer-btn-clr);
+  color: var(--ac-secondary-txt-clr);
+  font-size: 1rem;
+  padding: 15px 45px;
+  font-weight: 700;
+  border-radius: 15px;
+  box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.3);
+  margin: 0 auto;
+  &:hover, &:focus {
+    background-color: var(--ac-footer-btn-hover);
+    border: solid .3em var(--ac-hover);
+    box-shadow:none;
+
+  }
 }
 
-footer div span, footer nav a {
-    color: var(--black);
-    font-size: 12px;
+footer div span,
+footer nav a {
+  color: var(--black);
+  font-size: 12px;
 }
 
 footer > div:nth-of-type(1) {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 footer > div:nth-of-type(1)::after {
-    background-image: url("/images/animal-crossing/birthday-red_2x.jpg");
-    background-color: var(--ac-link-clr);
-    background-size: 17px auto;
-    content: "";
-    display: block;
-    height: 20px;
-    position: relative;
+  background-image: url("/images/animal-crossing/birthday-red_2x.jpg");
+  background-color: var(--ac-link-clr);
+  background-size: 17px auto;
+  content: "";
+  display: block;
+  height: 20px;
+  position: relative;
 }
 
 footer > div:nth-of-type(1)::before {
-    background-image: url("/images/animal-crossing/fir-tree-border-2x.png");
-    background-size: 1110px auto;
-    content: "";
-    height: 126px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+  background-image: url("/images/animal-crossing/fir-tree-border-2x.png");
+  background-size: 1110px auto;
+  content: "";
+  height: 126px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 footer > div:nth-of-type(2) {
-        margin: 16px;
-        display: flex;
-        flex-direction: column;
-        div {
-            margin-top: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 1.5em;
-        }
+  margin: 16px;
+  display: flex;
+  flex-direction: column;
+  div {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+  }
 }
 
 @media (width <= 600px) {
-	header {
-		top: 0;
-		z-index: 2;
-	}
-
-	/* header nav ul:nth-of-type(1) {
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		align-content: center;
-		gap: 1em;
-		padding: 4em;
-		position: fixed;
-		background-color: rgba(var(--header-clr), 0.95);
-		transition: 1s;
-		inset: 5em 0 0 0;
-		translate: -100% 0;
-		z-index: 1;
-	}
-
-	header nav ul:nth-of-type(1) li {
-		background-color: var(--secondary-clr);
-	}
-
-	header nav.is-open ul {
-		translate: 0 0;
-		
-	}
-} */
-
-    
+  header {
+    top: 0;
+    z-index: 2;
+  }
 }
