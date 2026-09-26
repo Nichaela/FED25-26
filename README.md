@@ -40,7 +40,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Animal crossing home pagina
-  
+  <img width="326" height="714" alt="image" src="https://github.com/user-attachments/assets/42a7812f-322b-4bfa-bbf6-52334fef794a" />
+
 
  
 </details>
