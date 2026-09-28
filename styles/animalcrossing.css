@@ -1,41 +1,57 @@
 /* 
 credits: https://animalcrossing.nintendo.com/ 
 https://scroll-driven-animations.style/demos/progress-bar/css/ 
-https://css-tricks.com/almanac/properties/a/animation/
+https://codepen.io/Elle-Smith-the-animator/pen/MYyEboY
+
 */
 
 /* begin blok https://scroll-driven-animations.style/demos/progress-bar/css/  */
 html {
-	scroll-timeline: --page-scroll block;
+  scroll-timeline: --page-scroll block;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after, 
-  .paused {
-    animation-duration: 2s !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
+.paused {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+  scroll-behavior: auto !important;
+
+  section:nth-of-type(3) li,
+  section:nth-of-type(3) span {
+    transition: none;
+  }
+
+  main > section div:nth-of-type(1) > article {
+    animation: appear 1.5s linear;
+  }
+
+  #progress {
+    display: none;
   }
 }
 
 @keyframes grow-progress {
-	from { transform: scaleX(0); }
-	to { transform: scaleX(1); }
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
 }
 
 #progress {
-	position: fixed;
-	left: 0; top: 0;
-	width: 100%; height: 1em;
-	background: var(--ac-news-date-clr);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 1em;
+  background: var(--primary-clr);
 
-	transform-origin: 0 50%;
-	animation: grow-progress auto linear;
-	animation-timeline: --page-scroll;
-    z-index: 5;
+  transform-origin: 0 50%;
+  animation: grow-progress auto linear;
+  animation-timeline: --page-scroll;
+  z-index: 5;
 }
 
 /* eind blok https://scroll-driven-animations.style/demos/progress-bar/css/ */
@@ -46,8 +62,6 @@ body {
   line-height: 1.75;
   color: var(--ac-secondary-txt-clr);
   text-align: center;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 h1,
@@ -82,19 +96,33 @@ main > section div > a {
   position: relative;
   z-index: 2;
 
-  &:hover, &:focus, &:active {
+  &:hover,
+  &:focus,
+  &:active {
     background-color: var(--ac-hover);
-    border: solid .3em var(--ac-camp-heading-clr);
+    border: solid 0.3em transparent;
+    border-image: url(/images/animal-crossing/birthday-red_2x.jpg) 20% round;
   }
 }
 
-a:hover, button:hover {
-    cursor: pointer;
+a:hover,
+button:hover {
+  cursor: pointer;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 3px;
 }
 
 /****************/
 /*     nav    	*/
 /****************/
+header {
+  top: 0;
+  z-index: 2;
+}
 
 header a {
   color: var(--white);
@@ -113,36 +141,34 @@ header > nav {
 header > nav img {
   display: block;
   width: 97px;
+  height: 48px;
 }
 
 header > div:nth-of-type(1) {
-    background: var(--ac-link-txt-clr);
-    padding-block: .5em;
-    z-index: 4;
-    font-size: 0.875em;
-}
+  background: var(--ac-link-txt-clr);
+  padding-block: 0.5em;
+  z-index: 4;
+  font-size: 0.875em;
 
-header > div:nth-of-type(1) button {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    gap: .6em;
-    text-transform: uppercase;
-}
-/* https://blog.pope.tech/2025/12/08/design-accessible-animation-and-movement/#implementing */
-@media (prefers-reduced-motion: {
+  &:hover {
+    background-color: var(--ac-secondary-txt-clr);
+    color: var(--ac-link-txt-clr);
+    cursor: pointer;
 
-})
-
-
-
-@media (max-width: 768px) {
-  header > nav img {
-    height: 48px;
+    span {
+      color: var(--ac-link-txt-clr);
+    }
   }
 }
 
+header > div:nth-of-type(1) button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 0.6em;
+  text-transform: uppercase;
+}
 
 /****************/
 /*   hero    	*/
@@ -151,13 +177,11 @@ header > div:nth-of-type(1) button {
 header > div:nth-of-type(2) {
   background-image: url("../images/animal-crossing/hero-bg.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: 50% 50%;
   margin: 0 auto;
   padding: 1.56em 0;
   text-align: center;
   height: auto;
-  background-size: cover;
-  background-position: 50% 50%;
   overflow: hidden;
   position: relative;
 }
@@ -242,6 +266,7 @@ header > div:nth-of-type(3) nav {
   width: 130px;
   margin: 0 auto;
 }
+
 /* genAI prompt: Hoe komt het dat de border-radius niet werkt: antw: overflow:hidden zodat de ::after image contained wordt */
 header > div:nth-of-type(3) nav button {
   width: 46px;
@@ -253,6 +278,7 @@ header > div:nth-of-type(3) nav button {
   background-color: #c4161c;
   box-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
 }
+
 header > div:nth-of-type(3) nav button::after {
   width: 100%;
   height: 100%;
@@ -333,14 +359,15 @@ main > section:nth-of-type(1) > div:nth-of-type(1) div:nth-of-type(1) {
 }
 
 @keyframes appear {
-    from {
-        opacity: 0;
-        transform: translate(-100px);
-    }
-    to {
-        opacity: 1;
-        transform: translate(0);
-    }
+  from {
+    opacity: 0;
+    transform: translate(-100px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
 
 main > section div:nth-of-type(1) > article {
@@ -353,13 +380,15 @@ main > section div:nth-of-type(1) > article {
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.3);
   font-weight: 700;
 
-  animation: appear 1s linear;
+  animation: appear 0.5s linear;
 }
 
-main > section div:nth-of-type(1) > article:hover,main > section div:nth-of-type(1) > article:focus {
-    box-shadow: 0 0 0 6px #961115;
-    border-radius: 12px;
-    transform: scale(1.02)
+main > section div:nth-of-type(1) > article:hover,
+main > section div:nth-of-type(1) > article:focus-within {
+  /* box-shadow: 0 0 0 6px #961115; */
+  border: solid 0.4em transparent;
+  border-image: url(/images/animal-crossing/birthday-red_2x.jpg) 20% round;
+  transform: scale(1.02);
 }
 
 main > section:nth-of-type(1) div:nth-of-type(1) > article time {
@@ -375,8 +404,6 @@ main > section:nth-of-type(1) div:nth-of-type(1) > article > a {
   width: 100%;
   text-decoration: none;
   color: inherit;
-
-  
 }
 
 main > section:nth-of-type(1) div:nth-of-type(1) > article a h3 {
@@ -394,11 +421,6 @@ main > section:nth-of-type(1) div:nth-of-type(1) > article img {
   border-radius: 0.75em;
   width: 100%;
 }
-
-/* section:nth-of-type(1) > article a {
-    background-color: transparent;
-    color: var(--ac-link-clr);
-} */
 
 /****************/
 /*     Video    */
@@ -418,16 +440,6 @@ main > section:nth-of-type(1) div:nth-of-type(2) h3 a {
   font-size: 1.125em;
   text-decoration: none;
 }
-
-/* main > section:nth-of-type(1) div { 
-     background-size: 995px 125px;
-    height: 125px;
-} 
-
-main > section:nth-of-type(1) div:nth-of-type(3) {
-    background-image: url('images/animal-crossing/apple-border-top_2x.png');
-content: '';
-} */
 
 main > section:nth-of-type(1) a:nth-of-type(2) {
   z-index: 5;
@@ -478,13 +490,11 @@ video {
   background-image: url("/images/animal-crossing/apple-border-top_2x.png");
   background-size: 995px 7.8125em;
   height: 7.8125em;
-  padding-top: 7.8125em;
-  padding-bottom: 0;
-  z-index: 24;
+  z-index: 6;
   top: 0;
   width: 100%;
-  height: 127px;
   display: inline-block;
+  background-repeat: no-repeat;
 }
 
 .foliage-cap::after {
@@ -560,7 +570,7 @@ section:nth-of-type(3) {
   position: relative;
   background-image: url("/images/animal-crossing/play-dots.png");
   background-color: var(--ac-play-bg-clr);
-  background-size:2em 2em;
+  background-size: 2em 2em;
   padding-block: 1.25em 5.3125em;
 
   h2 {
@@ -568,20 +578,28 @@ section:nth-of-type(3) {
   }
 }
 
-section:nth-of-type(3) li, section:nth-of-type(3) span {
-    transition: transform 0.6s ease;
+section:nth-of-type(3) li,
+section:nth-of-type(3) span {
+  transition: transform 0.6s ease;
 }
 
-section:nth-of-type(3) li:hover, section:nth-of-type(3) li:focus {
-    transform: translateY(-.5em);
-    border: solid .4em var(--ac-hover);
-    background-color: var(--primary-clr);
-    div {
-        color: var(--white);
-    }
+section:nth-of-type(3) li:hover,
+section:nth-of-type(3) li:focus-within {
+  transform: translateY(-0.5em);
+  border: solid 0.4em transparent;
+  background-color: var(--white);
+  border-image: url(/images/animal-crossing/birthday-red_2x.jpg) 20% round;
+
+  div {
+    color: var(--black);
+  }
+  span {
+    color: var(--white);
+    background-color: var(--ac-link-clr);
+  }
 }
 
-section:nth-of-type(3) a:hover span  {
+section:nth-of-type(3) a:hover span {
   transform: rotateX(360deg);
 }
 
@@ -601,11 +619,9 @@ section:nth-of-type(3) li {
 
 section:nth-of-type(3) li a {
   display: flex;
-  
+
   box-shadow: 0 calc(4px * 2) 0 4px * -1 var(--black);
-  transition: box-shadow 0.1s ease-in;
-  transition-property: transform, box-shadow;
-  will-change: box-shadow;
+  transition: transform 0.1s ease-in, box-shadow 0.1s ease-in;
 }
 
 section:nth-of-type(3) li:nth-child(odd) a img {
@@ -662,7 +678,6 @@ section:nth-of-type(3) div p {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
-  /* genAI prompt: What does "Also define the standard property 'line-clamp' for compatibility mean": antwoord: in safari en firefox heb je de extra line nodig  */
   line-clamp: 3;
   overflow: hidden;
 }
@@ -707,11 +722,12 @@ footer > div > a:first-of-type {
   border-radius: 0.9375em;
   box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.3);
   margin: 0 auto;
-    &:hover, &:focus {
-        background-color: var(--ac-footer-btn-hover);
-        border: solid .3em var(--ac-hover);
-        box-shadow:none;
 
+  &:hover,
+  &:focus {
+    background-color: var(--ac-footer-btn-hover);
+    border: solid 0.3em var(--ac-hover);
+    box-shadow: none;
   }
 }
 
@@ -753,6 +769,7 @@ footer > div:nth-of-type(2) {
   margin: 16px;
   display: flex;
   flex-direction: column;
+
   div {
     margin-top: 10px;
     display: flex;
@@ -762,9 +779,22 @@ footer > div:nth-of-type(2) {
   }
 }
 
-@media (width <= 600px) {
-  header {
-    top: 0;
-    z-index: 2;
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  section.play-nintendo li,
+  section.play-nintendo span {
+    transition: none;
+  }
+
+  #progress {
+    display: none;
   }
 }
