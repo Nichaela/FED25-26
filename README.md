@@ -55,7 +55,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
+  **Nintendo home pagina**
   - De nintendo home pagina heeft geen enkele heading
   - De tab selectie gaat niet verder dan de tweede sectie
 
@@ -66,6 +66,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Caps lock f7 kopjes
   Caps lock f6 links
+
+  <img width="300" height="400" alt="FED 25-26 - Blok 1 - WCAG checklist_Page_1" src="https://github.com/user-attachments/assets/77ffd6a5-2f52-4f48-96f2-9ed428a84e90" />
+<img width="300" height="400" alt="FED 25-26 - Blok 1 - WCAG checklist_Page_2" src="https://github.com/user-attachments/assets/ac1c84d2-3c8d-4e78-a1f0-984226bf1f67" />
+<img width="300" height="400" alt="FED 25-26 - Blok 1 - WCAG checklist_Page_3" src="https://github.com/user-attachments/assets/8b0b7181-3d6f-4d4a-b595-e689e6ea3c74" />
+<img width="300" height="400" alt="FED 25-26 - Blok 1 - WCAG checklist_Page_4" src="https://github.com/user-attachments/assets/43d74918-79ff-456f-a225-1b7dfd860aaa" />
+<img width="300" height="400" alt="FED 25-26 - Blok 1 - WCAG checklist_Page_5" src="https://github.com/user-attachments/assets/deae5572-e7ca-4fbf-9137-19ee1515725e" />
 
  **Animal Crossing home pagina**
  - Geen dark mode
@@ -85,11 +91,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <img width="300" height="400" alt="4" src="https://github.com/user-attachments/assets/4def650c-7823-4bc2-985d-f34e34a438e3" />
 <img width="300" height="400" alt="5" src="https://github.com/user-attachments/assets/fd190353-aff8-46b9-9a64-a027a7605f00" />
 
-<img width="300" height="400" alt="FED 25-26 - Blok 1 - WCAG checklist_Page_1" src="https://github.com/user-attachments/assets/77ffd6a5-2f52-4f48-96f2-9ed428a84e90" />
-<img width="300" height="400" alt="FED 25-26 - Blok 1 - WCAG checklist_Page_2" src="https://github.com/user-attachments/assets/ac1c84d2-3c8d-4e78-a1f0-984226bf1f67" />
-<img width="300" height="400" alt="FED 25-26 - Blok 1 - WCAG checklist_Page_3" src="https://github.com/user-attachments/assets/8b0b7181-3d6f-4d4a-b595-e689e6ea3c74" />
-<img width="300" height="400" alt="FED 25-26 - Blok 1 - WCAG checklist_Page_4" src="https://github.com/user-attachments/assets/43d74918-79ff-456f-a225-1b7dfd860aaa" />
-<img width="300" height="400" alt="FED 25-26 - Blok 1 - WCAG checklist_Page_5" src="https://github.com/user-attachments/assets/deae5572-e7ca-4fbf-9137-19ee1515725e" />
+
 
 
 
@@ -260,12 +262,38 @@ Sources:
 
 ## Toegankelijkheidstest 2/2 (week 4)
 
-<details>
+<details open>
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+**Nintendo home pagina**
+- sections i.p.v. divs gebruikt
+- alles wat een navigatie of lijst is staan in nav of ul elementen
+- dark mode toegevoegd
+- aria labels toegevoegd
+- alt attributes tekst toegevoegd
+- aria-hidden="true" focusable="false" toegevoegd aan decoratieve svgs
+- aria-roledescription="carousel" aan carousel gegeven
+  
+ <img width="300" height="400" alt="FED 25-26 - Blok 1 - WCAG checklist_Page_1" src="https://github.com/user-attachments/assets/77ffd6a5-2f52-4f48-96f2-9ed428a84e90" />
+<img width="300" height="400" alt="FED 25-26 - Blok 1 - WCAG checklist_Page_2" src="https://github.com/user-attachments/assets/ac1c84d2-3c8d-4e78-a1f0-984226bf1f67" />
+<img width="300" height="400" alt="FED 25-26 - Blok 1 - WCAG checklist_Page_3" src="https://github.com/user-attachments/assets/8b0b7181-3d6f-4d4a-b595-e689e6ea3c74" />
+<img width="300" height="400" alt="FED 25-26 - Blok 1 - WCAG checklist_Page_4" src="https://github.com/user-attachments/assets/43d74918-79ff-456f-a225-1b7dfd860aaa" />
+<img width="300" height="400" alt="FED 25-26 - Blok 1 - WCAG checklist_Page_5" src="https://github.com/user-attachments/assets/deae5572-e7ca-4fbf-9137-19ee1515725e" />
 
+
+ **Animal Crossing home pagina**
+ - html validated
+ - aria-labels toegevoegd waar nodig
+ - alle niet decoratieve afbeeldingen staan in html met alt attributes waarin de tekst is beschreven
+ - rude motion knop gemaakt
+ - alles wat een navigatie of lijst is staan in nav of ul elementen
+
+<img width="300" height="400" alt="1" src="https://github.com/user-attachments/assets/617b9e4f-b3de-4393-a265-8477b4df4639" />
+<img width="300" height="400" alt="2" src="https://github.com/user-attachments/assets/3e24d8d0-6282-4b27-8365-6fc59e789fc6" />
+<img width="300" height="400" alt="3" src="https://github.com/user-attachments/assets/7973a4e9-0775-4599-8386-3e567ceb9962" />
+<img width="300" height="400" alt="4" src="https://github.com/user-attachments/assets/4def650c-7823-4bc2-985d-f34e34a438e3" />
+<img width="300" height="400" alt="5" src="https://github.com/user-attachments/assets/fd190353-aff8-46b9-9a64-a027a7605f00" />
 </details>
 
 
