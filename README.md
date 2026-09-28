@@ -1,3 +1,4 @@
+<img width="3000" height="4000" alt="1" src="https://github.com/user-attachments/assets/89454cb9-f328-4016-a3b0-efdd647f0d5e" />
 # Procesverslag
 Markdown is een simpele manier om HTML te schrijven.  
 Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
@@ -65,6 +66,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Caps lock f7 kopjes
   Caps lock f6 links
+<img width="3000" height="4000" alt="1" src="https://github.com/user-attachments/assets/617b9e4f-b3de-4393-a265-8477b4df4639" />
+<img width="3000" height="4000" alt="2" src="https://github.com/user-attachments/assets/3e24d8d0-6282-4b27-8365-6fc59e789fc6" />
+<img width="3000" height="4000" alt="3" src="https://github.com/user-attachments/assets/7973a4e9-0775-4599-8386-3e567ceb9962" />
+<img width="3000" height="4000" alt="4" src="https://github.com/user-attachments/assets/4def650c-7823-4bc2-985d-f34e34a438e3" />
+<img width="3000" height="4000" alt="5" src="https://github.com/user-attachments/assets/fd190353-aff8-46b9-9a64-a027a7605f00" />
+
+
+
 
 
 </details>
