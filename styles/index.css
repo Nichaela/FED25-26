@@ -178,7 +178,6 @@ button.is-open span:nth-of-type(3){
   rotate: -45deg;
 }
 
-
 main > section:not(:first-of-type) {
     max-width: 94%;
     margin: 0 auto;
@@ -198,3 +197,11 @@ footer {
 	margin-top: 2em;
 }
 
+@media (prefers-color-scheme: dark) {
+	header nav ul:nth-of-type(1) {
+		background-color: rgb(45 45 45 / 95%);
+	}
+	    header nav ul:nth-of-type(1) li {
+			background-color: #81000a;
+		}
+}
