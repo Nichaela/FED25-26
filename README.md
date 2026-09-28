@@ -56,7 +56,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
-  - De home pagina heeft geen een heading
+  - De nintendo home pagina heeft geen enkele heading
   - De tab selectie gaat niet verder dan de tweede sectie
 
   De narrator vertelt je alles wat je selecteert en schrijft. Dit kan erg desoriënterend zijn voor de gebruiker. Wanneer er een ingeklapte accordion ding open wordt gemaakt scant de Narrator hoeveel items erin staan. 
@@ -66,6 +66,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   Caps lock f7 kopjes
   Caps lock f6 links
+
+ **Animal Crossing home pagina**
+ - Geen dark mode
+ - geen aria labels
+ - states zijn niet duidelijk en vertrouwen alleen op kleur
+ - heading gebruik goede volgorde maar niet elke sectie heeft een heading
+ - veel divs in plaats van headings
+ - niet alle afbeeldingen hebben alt attributes
+ - gebruikt de a en button elementen zoals het hoort
+ - heeft al een reduce motion optie
+ - Kleuren contrast is al op gelet
+ 
+  
 <img width="300" height="400" alt="1" src="https://github.com/user-attachments/assets/617b9e4f-b3de-4393-a265-8477b4df4639" />
 <img width="300" height="400" alt="2" src="https://github.com/user-attachments/assets/3e24d8d0-6282-4b27-8365-6fc59e789fc6" />
 <img width="300" height="400" alt="3" src="https://github.com/user-attachments/assets/7973a4e9-0775-4599-8386-3e567ceb9962" />
