@@ -517,6 +517,7 @@ video {
 
 main > section:nth-of-type(2) {
   padding: 2.25em 0.75em;
+  margin-bottom: 48px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -557,16 +558,117 @@ main > section:nth-of-type(2) p {
 /*     Amiibo   */
 /****************/
 
-/* main > section:nth-of-type(3) ul li img {
-    max-height: 100px;
-    max-width: 100px;
+main > section:nth-of-type(3) {
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  padding-block: 30px 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 400%;
+    height: 100%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    background-color: #01a623;
+    background-image: url(/images/animal-crossing/green-triangles.png);
+    background-size: 156px 154.5px;
+    background-position: 50% 28%;
+    z-index: -1;
+  }
+}
+
+main > section:nth-of-type(3) h2 {
+  color: var(--white);
+  text-shadow: 0 3px 2px rgba(0, 0, 0, 0.3);
+  font-size: 1.75rem;
+}
+
+main > section:nth-of-type(3) p {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  margin-top: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  position: relative;
+  z-index: 31;
+  padding: 0 10px;
+}
+
+main > section:nth-of-type(3) ul {
+  margin-block: 30px 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-size: 16px;
+}
+
+main > section:nth-of-type(3) ul li {
+  width: 50%;
+  padding-inline: 10px;
+}
+
+main > section:nth-of-type(3) ul li img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 30;
+  line-height: 0;
+}
+
+main > section:nth-of-type(3) a {
+  background-color: #fdd10a;
+  color: #834b16;
+  border: none;
+  display: inline-block;
+  font-size: 1.115rem;
+  font-weight: bold;
+  padding: 15px 45px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 15px;
+  box-shadow: 0 3px 2px 0 rgba(0, 0, 0, 0.3);
+  margin-block: 30px 20px;
+}
+
+.amiibo-image {
+  padding-bottom: 300px;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-image: url(/images/animal-crossing/town-footer_2x.png);
+  background-size: auto 125%;
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-top: 30px;
+}
+/* .lineup-circle {
+  content: "";
+  background: #5ec34d;
+  position: absolute;
+  display: block;
+  width: 100%;
+  padding-bottom: 100%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border-radius: 50%;
+  z-index: 29;
+  bottom: 0;
+  opacity: 0.8;
 } */
 
 /***********************/
 /*     Play Nintendo   */
 /***********************/
 
-section:nth-of-type(3) {
+section:nth-of-type(4) {
   position: relative;
   background-image: url("/images/animal-crossing/play-dots.png");
   background-color: var(--ac-play-bg-clr);
@@ -578,13 +680,13 @@ section:nth-of-type(3) {
   }
 }
 
-section:nth-of-type(3) li,
-section:nth-of-type(3) span {
+section:nth-of-type(4) li,
+section:nth-of-type(4) span {
   transition: transform 0.6s ease;
 }
 
-section:nth-of-type(3) li:hover,
-section:nth-of-type(3) li:focus-within {
+section:nth-of-type(4) li:hover,
+section:nth-of-type(4) li:focus-within {
   transform: translateY(-0.5em);
   border: solid 0.4em transparent;
   background-color: var(--white);
@@ -599,36 +701,38 @@ section:nth-of-type(3) li:focus-within {
   }
 }
 
-section:nth-of-type(3) a:hover span {
+section:nth-of-type(4) a:hover span {
   transform: rotateX(360deg);
 }
 
-section:nth-of-type(3) ul {
+section:nth-of-type(4) ul {
   display: flex;
   flex-direction: column;
   gap: 1em;
   margin-inline: 1em;
 }
 
-section:nth-of-type(3) li {
+section:nth-of-type(4) li {
   background-color: var(--ac-play-clr);
   width: 100%;
   display: block;
   border: solid 4px var(--black);
 }
 
-section:nth-of-type(3) li a {
+section:nth-of-type(4) li a {
   display: flex;
 
   box-shadow: 0 calc(4px * 2) 0 4px * -1 var(--black);
-  transition: transform 0.1s ease-in, box-shadow 0.1s ease-in;
+  transition:
+    transform 0.1s ease-in,
+    box-shadow 0.1s ease-in;
 }
 
-section:nth-of-type(3) li:nth-child(odd) a img {
+section:nth-of-type(4) li:nth-child(odd) a img {
   order: 1;
 }
 
-section:nth-of-type(3) li a div {
+section:nth-of-type(4) li a div {
   display: flex;
   flex-direction: column;
   text-align: left;
@@ -637,20 +741,20 @@ section:nth-of-type(3) li a div {
   color: var(--black);
 }
 
-section:nth-of-type(3) li:nth-child(odd) a div {
+section:nth-of-type(4) li:nth-child(odd) a div {
   order: 2;
   text-align: right;
 }
 
-section:nth-of-type(3) li:nth-child(odd) a div span {
+section:nth-of-type(4) li:nth-child(odd) a div span {
   align-self: flex-end;
 }
 
-section:nth-of-type(3) li:nth-child(even) a div span {
+section:nth-of-type(4) li:nth-child(even) a div span {
   align-self: flex-start;
 }
 
-section:nth-of-type(3) div span {
+section:nth-of-type(4) div span {
   order: 1;
   color: var(--black);
   font-size: 0.75rem;
@@ -663,7 +767,7 @@ section:nth-of-type(3) div span {
   padding: 0.25em 0.75em 0.125em;
 }
 
-section:nth-of-type(3) div h3 {
+section:nth-of-type(4) div h3 {
   order: 2;
   line-height: 1.4;
   font-size: 1.125rem;
@@ -671,7 +775,7 @@ section:nth-of-type(3) div h3 {
   padding: 0;
 }
 
-section:nth-of-type(3) div p {
+section:nth-of-type(4) div p {
   order: 3;
   font-size: 0.875rem;
   padding: 0;
@@ -682,7 +786,7 @@ section:nth-of-type(3) div p {
   overflow: hidden;
 }
 
-section:nth-of-type(3) img {
+section:nth-of-type(4) img {
   width: 50%;
 }
 
