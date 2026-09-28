@@ -85,6 +85,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <img width="300" height="400" alt="4" src="https://github.com/user-attachments/assets/4def650c-7823-4bc2-985d-f34e34a438e3" />
 <img width="300" height="400" alt="5" src="https://github.com/user-attachments/assets/fd190353-aff8-46b9-9a64-a027a7605f00" />
 
+<img width="300" height="400" alt="FED 25-26 - Blok 1 - WCAG checklist_Page_1" src="https://github.com/user-attachments/assets/77ffd6a5-2f52-4f48-96f2-9ed428a84e90" />
+<img width="300" height="400" alt="FED 25-26 - Blok 1 - WCAG checklist_Page_2" src="https://github.com/user-attachments/assets/ac1c84d2-3c8d-4e78-a1f0-984226bf1f67" />
+<img width="300" height="400" alt="FED 25-26 - Blok 1 - WCAG checklist_Page_3" src="https://github.com/user-attachments/assets/8b0b7181-3d6f-4d4a-b595-e689e6ea3c74" />
+<img width="300" height="400" alt="FED 25-26 - Blok 1 - WCAG checklist_Page_4" src="https://github.com/user-attachments/assets/43d74918-79ff-456f-a225-1b7dfd860aaa" />
+<img width="300" height="400" alt="FED 25-26 - Blok 1 - WCAG checklist_Page_5" src="https://github.com/user-attachments/assets/deae5572-e7ca-4fbf-9137-19ee1515725e" />
 
 
 
